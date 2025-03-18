@@ -1,0 +1,66 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Vision Research Lab</h3>
+                <p>University of California, Santa Barbara</p>
+                <p>Santa Barbara, CA 93106</p>
+                <p>Email: vrl@ece.ucsb.edu</p>
+                <p>Phone: (805) 893-XXXX</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="people.html" class="footer-link">People</a></li>
+                    <li><a href="bisque.html" class="footer-link">BisQue</a></li>
+                    <li><a href="publications.html" class="footer-link">Publications</a></li>
+                    <li><a href="research.html" class="footer-link">Research</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.ucsb.edu/" target="_blank">UCSB Main Website</a></li>
+                    <li><a href="https://engineering.ucsb.edu/" target="_blank">College of Engineering</a></li>
+                    <li><a href="https://www.ece.ucsb.edu/" target="_blank">Electrical & Computer Engineering</a></li>
+                    <li><a href="#" target="_blank">BisQue Platform</a></li>
+                    <li><a href="#" target="_blank">Student Resources</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vision Research Lab, UC Santa Barbara. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    // Activate current page in navigation
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get current page filename
+        const path = window.location.pathname;
+        const page = path.split("/").pop();
+        
+        // Set active class for navigation
+        if (page === "index.html" || page === "") {
+            document.getElementById('home-link').classList.add('active');
+        } else if (page === "people.html") {
+            document.getElementById('people-link').classList.add('active');
+        } else if (page === "bisque.html") {
+            document.getElementById('bisque-link').classList.add('active');
+        } else if (page === "publications.html") {
+            document.getElementById('publications-link').classList.add('active');
+        } else if (page === "research.html") {
+            document.getElementById('research-link').classList.add('active');
+        } else if (page === "contact.html") {
+            document.getElementById('contact-link').classList.add('active');
+        }
+    });
+</script>

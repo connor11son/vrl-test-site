@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Research Lab - UC Santa Barbara</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --light-bg: #f8fafc;
+            --lighter-bg: #ffffff;
+            --card-bg: #ffffff;
+            --primary: #0073bb;
+            --primary-dark: #005d99;
+            --accent: #009688;
+            --text: #333333;
+            --text-secondary: #666666;
+            --border: #e0e0e0;
+            --success: #4caf50;
+            --gradient-end: #e0e5eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: linear-gradient(to bottom, var(--light-bg) 0%, #e5e9f0 100%);
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--darker-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent);
+        }
+
+        /* Header styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: transparent;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .logo-text h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: var(--text);
+        }
+
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Navigation styles */
+        nav {
+            position: relative;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .nav-links a {
+            display: block;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background-color: rgba(0, 115, 187, 0.05);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+            background-color: rgba(0, 115, 187, 0.1);
+        }
+
+        /* Mobile menu button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        /* Hero section with parallax */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-color: var(--lighter-bg);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animation for hero content */
+        .animated-title {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.2s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .animated-content {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.2s ease forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+
+        /* Main content styles */
+        main {
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(to bottom, var(--light-bg) 0%, #e0e5eb 100%);
+            background-attachment: fixed;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text);
+            position: relative;
+            display: inline-block;
+        }
+
+        .page-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent);
+        }
+
+        section {
+            padding: 80px 0;
+            position: relative;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        section:nth-child(even) {
+            background: linear-gradient(to bottom, rgba(245, 247, 250, 0.6) 0%, rgba(231, 235, 240, 0.6) 100%);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+        }
+
+        /* Feature boxes */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background: linear-gradient(to bottom, #ffffff 0%, #f7f9fc 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-img {
+            height: 200px;
+            background-color: var(--light-bg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+        }
+
+        .feature-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-content h3 {
+            margin-bottom: 15px;
+            color: var(--text);
+            font-size: 1.3rem;
+        }
+
+        /* People page styles */
+        /* Team member styles */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .team-member {
+            background: linear-gradient(to bottom, #ffffff 0%, #f7f9fc 100%);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-photo {
+            height: 250px;
+            width: 100%;
+            background-color: var(--light-bg);
+            background-size: cover;
+            background-position: center top;
+            position: relative;
+        }
+
+        .member-photo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, var(--card-bg), transparent);
+        }
+
+        .member-info {
+            padding: 25px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+
+        .member-info h3 {
+            margin-bottom: 5px;
+            color: var(--text);
+        }
+
+        .member-role {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .member-info p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .member-info a {
+            font-size: 0.95rem;
+            color: var(--primary);
+        }
+
+        /* Publications page styles */
+        .publication {
+            background: linear-gradient(to bottom, #ffffff 0%, #f7f9fc 100%);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--primary);
+        }
+
+        .publication:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .publication h3 {
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .publication-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .publication-links {
+            margin-top: 15px;
+        }
+
+        .publication-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .publication-links a:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Research page styles */
+        .research-project {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (min-width: 768px) {
+            .research-project {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .research-image {
+            height: 300px;
+            background-color: var(--darker-bg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .research-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+        }
+
+        .research-content {
+            padding: 30px;
+        }
+
+        .research-content h3 {
+            color: var(--text);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .research-project:nth-child(even) .research-image {
+            order: 2;
+        }
+
+        .research-project:nth-child(even) .research-content {
+            order: 1;
+        }
+
+        /* Contact page styles */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-info {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .contact-item p {
+            margin-bottom: 8px;
+        }
+
+        .map {
+            background-color: var(--darker-bg);
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Form styles */
+        .contact-form {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: var(--darker-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #0073bb;
+            color: white;
+            padding: 60px 0 30px;
+            position: relative;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Social media links */
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Parallax section */
+        .parallax-section {
+            position: relative;
+            height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 2;
+        }
+
+        .parallax-content {
+            position: relative;
+            z-index: 3;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .parallax-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .parallax-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .parallax-section {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Card hover effect */
+        .hover-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: var(--card-bg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .hover-card-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+
+        .hover-card:hover .hover-card-img {
+            transform: scale(1.05);
+        }
+
+        .hover-card-content {
+            padding: 25px;
+        }
+
+        .hover-card-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        /* Stats counter */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .stat-item {
+            background-color: var(--card-bg);
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 250px;
+                background-color: var(--darker-bg);
+                flex-direction: column;
+                display: none;
+                z-index: 100;
+                border-radius: 8px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                padding: 10px 0;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0;
+            }
+
+            .nav-links a {
+                padding: 15px 20px;
+                border-radius: 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .research-project {
+                grid-template-columns: 1fr;
+            }
+
+            .research-project:nth-child(even) .research-image {
+                order: 1;
+            }
+
+            .research-project:nth-child(even) .research-content {
+                order: 2;
+            }
+        }
+
+        
+        /* 3D Model Page Styles */
+        .model-container {
+            width: 100%;
+            height: 600px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        
+        #eye-model {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .model-controls {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 10;
+        }
+        
+        .model-control-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(33, 150, 243, 0.7);
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .model-control-btn:hover {
+            background-color: rgba(33, 150, 243, 1);
+            transform: scale(1.1);
+        }
+        
+        .model-info {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .model-info h3 {
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        /* Publication Filter Styles */
+        .publication-filters {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Page specific styles */
+        #home-page, #people-page, #bisque-page, #publications-page, #research-page, #contact-page {
+            display: none;
+        }
+
+        #home-page.active, #people-page.active, #bisque-page.active, #publications-page.active, #research-page.active, #contact-page.active {
+            display: block;
+        }
+
+        /* Accent color dots */
+        .accent-dots {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--accent);
+        }
+
+        .dot:nth-child(2) {
+            opacity: 0.7;
+        }
+
+        .dot:nth-child(3) {
+            opacity: 0.4;
+        }
+        
+        /* Interactive Grid for BisQue page */
+        .interactive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .grid-item {
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .grid-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .grid-item:hover:before {
+            background: rgba(33, 150, 243, 0.3);
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .grid-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            color: white;
+            z-index: 2;
+            transform: translateY(30px);
+            transition: all 0.3s ease;
+        }
+
+        .grid-item:hover .grid-overlay {
+            transform: translateY(0);
+        }
+
+        .grid-overlay h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-overlay p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .grid-link-text {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--darker-bg);
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.3s ease 0.1s;
+        }
+
+        .grid-item:hover .grid-link-text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        /* Vertical Interactive Grid */
+        .vertical-interactive-grid {
+            margin-bottom: 60px;
+            height: 350px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .grid-background {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/api/placeholder/1200/350');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .vertical-section {
+            position: relative;
+            flex: 1;
+            height: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .vertical-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+        
+        .vertical-section:hover:before {
+            background: rgba(33, 150, 243, 0.3);
+        }
+        
+        .vertical-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px;
+            color: white;
+            z-index: 2;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .vertical-section:hover .vertical-overlay {
+            transform: translateY(0);
+        }
+        
+        .vertical-overlay h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .vertical-overlay p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        
+        .vertical-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .vertical-section:hover .grid-link-text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .section-label {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            z-index: 2;
+            padding: 0 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        
+        /* Section background positions to create one continuous image */
+        .web-app {
+            background-position: 0% center;
+        }
+        
+        .documentation {
+            background-position: 33.33% center;
+        }
+        
+        .github {
+            background-position: 66.66% center;
+        }
+        
+        .community {
+            background-position: 100% center;
+        }
+
+        @media (max-width: 768px) {
+            .interactive-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 200px);
+                height: auto;
+            }
+            
+            .grid-background {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            .vertical-section {
+                height: 150px;
+            }
+            
+            .vertical-interactive-grid {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="/api/placeholder/40/40" alt="VRL Logo">
+                <div class="logo-text">
+                    <h1>Vision Research Lab</h1>
+                    <p>UC Santa Barbara</p>
+                </div>
+            </div>
+
+            <nav>
+                <button class="mobile-menu-btn">≡</button>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active" data-page="home-page">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="people-page">People</a></li>
+                    <li><a href="#" class="nav-link" data-page="bisque-page">BisQue</a></li>
+                    <li><a href="#" class="nav-link" data-page="publications-page">Publications</a></li>
+                    <li><a href="#" class="nav-link" data-page="research-page">Research</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact-page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="home-page" class="active">
+            <!-- Hero Section with Parallax -->
+            <section class="hero">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="accent-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h1 class="animated-title">Vision Research Lab</h1>
+                    <div class="hero-buttons animated-content">
+                        <a href="#" class="btn" onclick="document.querySelector('[data-page=research-page]').click()">Our Research</a>
+                        <a href="#" class="btn btn-outline" onclick="document.querySelector('[data-page=contact-page]').click()">Contact Us</a>
+                    </div>
+                </div>
+                <div class="scroll-down">↓</div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Vision Research Lab</h2>
+                        <p class="section-subtitle">At the Vision Research Lab (VRL) at UC Santa Barbara, we conduct research in various areas of computer vision, machine learning, and image processing.</p>
+                        
+                        <p>Our focus is on developing innovative algorithms and technologies that can be applied to solve real-world problems in areas such as medical imaging, biological image analysis, remote sensing, and more. Led by faculty members with expertise in computer vision, machine learning, and related fields, our lab provides a collaborative environment for researchers at all levels to explore new ideas and contribute to the advancement of computer vision technologies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-color: var(--darker-bg);">
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Research Areas</h2>
+                        <p class="section-subtitle">Our lab specializes in several key areas of computer vision and machine learning research.</p>
+                        
+                        <div class="features">
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Deep Learning for Visual Recognition</h3>
+                                    <p>Developing advanced neural network architectures for object detection, recognition, and scene understanding in complex visual environments.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Biomedical Image Analysis</h3>
+                                    <p>Creating algorithms for analyzing medical and biological images to assist in diagnosis, treatment planning, and scientific research.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>BisQue Platform</h3>
+                                    <p>Developing and maintaining the BisQue platform for bioimage analysis, management, and sharing in scientific research.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parallax Section -->
+            <section class="parallax-section" style="background-image: url('/api/placeholder/1920/1080')">
+                <div class="parallax-overlay"></div>
+                <div class="parallax-content">
+                    <h2>Pushing the Boundaries of Computer Vision</h2>
+                    <p>Our research integrates cutting-edge technology with innovative algorithms to solve real-world challenges.</p>
+                    <a href="#" class="btn" onclick="document.querySelector('[data-page=bisque-page]').click()">Explore BisQue Platform</a>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Latest News</h2>
+                        <p class="section-subtitle">Stay updated with the latest developments from our lab.</p>
+                        
+                        <div class="features">
+                            <div class="feature-box">
+                                <div class="feature-content">
+                                    <h3>New Research Grant Awarded</h3>
+                                    <p>Our lab has received a major grant to support research on advanced computer vision algorithms for environmental monitoring using drone imagery.</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: auto;">March 1, 2025</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-content">
+                                    <h3>Paper Accepted at CVPR 2025</h3>
+                                    <p>Our team's paper on "Self-Supervised Learning for Medical Image Segmentation" has been accepted at the prestigious Computer Vision and Pattern Recognition conference.</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: auto;">February 15, 2025</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-content">
+                                    <h3>BisQue Platform Update</h3>
+                                    <p>We've released a major update to the BisQue platform (v3.0) with new features for large-scale image analysis and improved performance on cloud infrastructure.</p>
+                                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: auto;">January 20, 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- People Page -->
+        <div id="people-page">
+            <section style="padding-top: 120px; text-align: center;">
+                <div class="container">
+                    <div class="accent-dots" style="justify-content: center;">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h1 class="page-title">Our Team</h1>
+                    <p class="section-subtitle">Meet the researchers, faculty, and staff who make our work possible.</p>
+                    
+                    <section>
+                        <h2 class="section-title">Faculty</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Dr. Jane Smith</h3>
+                                    <p class="member-role">Lab Director, Professor</p>
+                                    <p>Ph.D. in Computer Science</p>
+                                    <p>Expertise: Computer Vision, Machine Learning</p>
+                                    <p><a href="mailto:jane.smith@ucsb.edu">jane.smith@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Dr. John Doe</h3>
+                                    <p class="member-role">Associate Professor</p>
+                                    <p>Ph.D. in Electrical Engineering</p>
+                                    <p>Expertise: Image Processing, Pattern Recognition</p>
+                                    <p><a href="mailto:john.doe@ucsb.edu">john.doe@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="section-title">Postdoctoral Researchers</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Dr. Alex Johnson</h3>
+                                    <p class="member-role">Postdoctoral Researcher</p>
+                                    <p>Ph.D. in Computer Vision</p>
+                                    <p>Research: Deep Learning for Medical Imaging</p>
+                                    <p><a href="mailto:alex.johnson@ucsb.edu">alex.johnson@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Dr. Sarah Lee</h3>
+                                    <p class="member-role">Postdoctoral Researcher</p>
+                                    <p>Ph.D. in Computer Science</p>
+                                    <p>Research: 3D Vision and Reconstruction</p>
+                                    <p><a href="mailto:sarah.lee@ucsb.edu">sarah.lee@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="section-title">Graduate Students</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Michael Brown</h3>
+                                    <p class="member-role">Ph.D. Student</p>
+                                    <p>Research: Object Detection in Complex Scenes</p>
+                                    <p><a href="mailto:michael.brown@ucsb.edu">michael.brown@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Emily Chen</h3>
+                                    <p class="member-role">Ph.D. Student</p>
+                                    <p>Research: Video Understanding and Analysis</p>
+                                    <p><a href="mailto:emily.chen@ucsb.edu">emily.chen@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>David Wilson</h3>
+                                    <p class="member-role">Ph.D. Student</p>
+                                    <p>Research: Biomedical Image Analysis</p>
+                                    <p><a href="mailto:david.wilson@ucsb.edu">david.wilson@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Lisa Wang</h3>
+                                    <p class="member-role">Master's Student</p>
+                                    <p>Research: Feature Learning for Visual Recognition</p>
+                                    <p><a href="mailto:lisa.wang@ucsb.edu">lisa.wang@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="section-title">Staff</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Robert Taylor</h3>
+                                    <p class="member-role">Lab Manager</p>
+                                    <p>Responsibilities: Lab Operations, Equipment Management</p>
+                                    <p><a href="mailto:robert.taylor@ucsb.edu">robert.taylor@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-photo" style="background-image: url('/api/placeholder/400/400')"></div>
+                                <div class="member-info">
+                                    <h3>Patricia Garcia</h3>
+                                    <p class="member-role">Administrative Assistant</p>
+                                    <p>Responsibilities: Administrative Support, Event Coordination</p>
+                                    <p><a href="mailto:patricia.garcia@ucsb.edu">patricia.garcia@ucsb.edu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <!-- BisQue Page -->
+        <div id="bisque-page">
+            <!-- Hero Section with Parallax -->
+            <section class="hero" style="height: 70vh;">
+                <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080')"></div>
+                <div class="hero-content">
+                    <div class="accent-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h1>BisQue Platform</h1>
+                    <p>Bio-Image Semantic Query User Environment: A powerful platform for biological image analysis and data management</p>
+                </div>
+                <div class="scroll-down">↓</div>
+            </section>
+            
+            <!-- Interactive Grid Section -->
+            <section style="padding: 70px 0 40px 0;">
+                <div class="container">
+                    <div class="vertical-interactive-grid fade-in">
+                        <div class="grid-background">
+                            <div class="vertical-section web-app">
+                                <div class="section-label">Web Application</div>
+                                <div class="vertical-overlay">
+                                    <h3>Web Application</h3>
+                                    <p>Access the BisQue platform online</p>
+                                    <span class="grid-link-text">Launch App</span>
+                                </div>
+                            </div>
+                            <div class="vertical-section documentation">
+                                <div class="section-label">Documentation</div>
+                                <div class="vertical-overlay">
+                                    <h3>Documentation</h3>
+                                    <p>Learn how to use BisQue</p>
+                                    <span class="grid-link-text">Read Docs</span>
+                                </div>
+                            </div>
+                            <div class="vertical-section github">
+                                <div class="section-label">GitHub</div>
+                                <div class="vertical-overlay">
+                                    <h3>GitHub Repository</h3>
+                                    <p>Access source code and contribute</p>
+                                    <span class="grid-link-text">View Code</span>
+                                </div>
+                            </div>
+                            <div class="vertical-section community">
+                                <div class="section-label">Community</div>
+                                <div class="vertical-overlay">
+                                    <h3>Community Forum</h3>
+                                    <p>Connect with other BisQue users</p>
+                                    <span class="grid-link-text">Join Forum</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="accent-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h2 class="section-title">About BisQue</h2>
+                    <p class="section-subtitle">A comprehensive platform for biological image analysis and management.</p>
+                    
+                    <div class="fade-in">
+                        <p>BisQue (Bio-Image Semantic Query User Environment) is an open-source platform developed at the Vision Research Lab, UCSB, for the management, analysis, and sharing of biological images. It is designed to address the challenges of working with complex, multi-dimensional scientific images in a collaborative research environment.</p>
+                        <p>BisQue provides researchers with tools to:</p>
+                        <ul style="margin-left: 20px; margin-bottom: 20px; color: var(--text-secondary);">
+                            <li>Store and organize large collections of images with associated metadata</li>
+                            <li>Perform image analysis using a variety of built-in and custom algorithms</li>
+                            <li>Share images and analysis results with collaborators</li>
+                            <li>Integrate with other research tools and workflows</li>
+                        </ul>
+                        <p>The platform supports a wide range of image formats and can handle multi-dimensional data (2D, 3D, 4D, and beyond), making it suitable for various scientific applications, including microscopy, medical imaging, and remote sensing.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-color: var(--darker-bg);">
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Key Features</h2>
+                        <p class="section-subtitle">BisQue offers a comprehensive set of features for scientific image analysis and management.</p>
+                        
+                        <div class="features">
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Image Management</h3>
+                                    <p>Store, organize, and search large collections of scientific images with customizable metadata schemas.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Image Analysis</h3>
+                                    <p>Access a library of image analysis algorithms or develop custom analysis workflows using Python, MATLAB, or other tools.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Collaboration</h3>
+                                    <p>Share images, annotations, and analysis results with collaborators and control access permissions.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Visualization</h3>
+                                    <p>View and interact with multi-dimensional images using advanced visualization tools, including 3D rendering.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Use Cases</h2>
+                        <p class="section-subtitle">BisQue is used in various scientific domains for image-based research.</p>
+                        
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>Marine Science</h3>
+                                <p>BisQue is used by marine scientists to analyze images of coral reefs, track changes over time, and study marine ecosystems. The platform's ability to handle large image datasets and support collaborative research makes it valuable for multi-institutional projects.</p>
+                            </div>
+                        </div>
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>Plant Biology</h3>
+                                <p>In plant biology, BisQue helps researchers analyze images of plant structures, measure growth patterns, and study phenotypic traits. The platform's image analysis capabilities enable automated processing of large numbers of plant images for high-throughput studies.</p>
+                            </div>
+                        </div>
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>Medical Research</h3>
+                                <p>Medical researchers use BisQue to manage and analyze medical images, such as MRI scans, microscopy images of tissue samples, and other biomedical data. The platform's support for metadata and annotation helps in organizing complex datasets and facilitating collaboration among research teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section style="background-color: var(--darker-bg);">
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Getting Started</h2>
+                        <p class="section-subtitle">Ready to start using BisQue? Here's how to get started.</p>
+                        
+                        <div class="features">
+                            <div class="feature-box">
+                                <div class="feature-content">
+                                    <h3>Public Instance</h3>
+                                    <p>Access our public server to try out BisQue's features without installation. Perfect for initial exploration and small projects.</p>
+                                    <a href="#" class="btn" style="margin-top: 15px;">Access Public BisQue</a>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-content">
+                                    <h3>GitHub Repository</h3>
+                                    <p>Download the source code and set up your own BisQue server for custom deployments and integration with existing systems.</p>
+                                    <a href="#" class="btn" style="margin-top: 15px;">GitHub Repository</a>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-content">
+                                    <h3>Documentation</h3>
+                                    <p>Explore our comprehensive documentation to learn about BisQue's features, APIs, and how to use it for your research.</p>
+                                    <a href="#" class="btn" style="margin-top: 15px;">Read Documentation</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 40px; text-align: center;">
+                            <p>Need help getting started or have questions about BisQue?</p>
+                            <a href="#" class="btn" style="margin-top: 15px;" onclick="document.querySelector('[data-page=contact-page]').click()">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Publications Page -->
+        <div id="publications-page">
+            <section style="padding-top: 120px;">
+                <div class="container">
+                    <div class="accent-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h1 class="page-title">Publications</h1>
+                    <p class="section-subtitle">Our research has been published in top-tier conferences and journals in the field of computer vision and machine learning.</p>
+                    
+                    <div class="fade-in">
+                        <h2 class="section-title">Recent Publications</h2>
+                        
+                        <div class="publication">
+                            <h3>Deep Learning for Automated Coral Reef Analysis</h3>
+                            <p class="publication-meta">Smith J., Johnson A., Doe J., Chen E. (2024) | Journal of Marine Biology</p>
+                            <p>This paper presents a novel deep learning approach for automated analysis of coral reef images, enabling more efficient monitoring of reef health and biodiversity.</p>
+                            <div class="publication-links">
+                                <a href="#">PDF</a>
+                                <a href="#">DOI</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                        
+                        <div class="publication">
+                            <h3>BisQue: A Platform for Bioimage Analysis and Management in the Cloud</h3>
+                            <p class="publication-meta">Doe J., Lee S., Wilson D., Smith J. (2023) | Bioinformatics</p>
+                            <p>This paper describes the architecture and key features of the BisQue platform, highlighting its applications in bioimage analysis and management.</p>
+                            <div class="publication-links">
+                                <a href="#">PDF</a>
+                                <a href="#">DOI</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                        
+                        <div class="publication">
+                            <h3>Self-Supervised Learning for Medical Image Segmentation</h3>
+                            <p class="publication-meta">Johnson A., Brown M., Smith J. (2023) | IEEE Transactions on Medical Imaging</p>
+                            <p>This paper proposes a self-supervised learning approach for medical image segmentation that reduces the need for large amounts of labeled training data.</p>
+                            <div class="publication-links">
+                                <a href="#">PDF</a>
+                                <a href="#">DOI</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                        
+                        <div class="publication">
+                            <h3>3D Object Detection in Point Clouds Using Transformer Networks</h3>
+                            <p class="publication-meta">Lee S., Wang L., Smith J. (2022) | IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>
+                            <p>This paper presents a novel approach to 3D object detection in point clouds using transformer-based neural networks.</p>
+                            <div class="publication-links">
+                                <a href="#">PDF</a>
+                                <a href="#">DOI</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                        
+                        <div class="publication">
+                            <h3>Automated Plant Phenotyping Using Computer Vision</h3>
+                            <p class="publication-meta">Chen E., Wilson D., Doe J. (2022) | Plant Methods</p>
+                            <p>This paper describes a computer vision system for automated plant phenotyping, enabling high-throughput analysis of plant growth and development.</p>
+                            <div class="publication-links">
+                                <a href="#">PDF</a>
+                                <a href="#">DOI</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2 class="section-title">Books and Book Chapters</h2>
+                        
+                        <div class="publication">
+                            <h3>Computer Vision for Biological Image Analysis</h3>
+                            <p class="publication-meta">Smith J., Doe J. (Eds.) (2021) | Springer</p>
+                            <p>This edited volume covers various aspects of computer vision applied to biological image analysis, with contributions from leading researchers in the field.</p>
+                            <div class="publication-links">
+                                <a href="#">Publisher</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                        
+                        <div class="publication">
+                            <h3>Deep Learning Methods for Medical Image Analysis</h3>
+                            <p class="publication-meta">Johnson A., Smith J. (2020) | In: Medical Image Processing: Techniques and Applications</p>
+                            <p>This book chapter provides an overview of deep learning methods for medical image analysis, with examples from various medical imaging modalities.</p>
+                            <div class="publication-links">
+                                <a href="#">Publisher</a>
+                                <a href="#">BibTeX</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2 class="section-title">Patents</h2>
+                        
+                        <div class="publication">
+                            <h3>Method and System for Automated Analysis of Biomedical Images</h3>
+                            <p class="publication-meta">Smith J., Doe J., Johnson A. | U.S. Patent No. 12,345,678 (2022)</p>
+                            <p>This patent describes a novel method for automated analysis of biomedical images using deep learning techniques.</p>
+                            <div class="publication-links">
+                                <a href="#">Patent Office</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Research Page -->
+        <div id="research-page">
+            <section style="padding-top: 120px;">
+                <div class="container">
+                    <div class="accent-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h1 class="page-title">Research</h1>
+                    <p class="section-subtitle">Our lab focuses on developing innovative algorithms and technologies in computer vision, machine learning, and image processing.</p>
+                    
+                    <div class="fade-in">
+                        <h2 class="section-title">Research Areas</h2>
+                        <p>At the Vision Research Lab, we focus on developing innovative algorithms and technologies in computer vision, machine learning, and image processing. Our research spans a wide range of areas, from fundamental theoretical work to applied research with real-world applications.</p>
+                        
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>Biomedical Image Analysis</h3>
+                                <p>Our lab develops computer vision and machine learning methods for analyzing biomedical images, including microscopy, histology, and medical imaging. We work on problems such as cell detection and segmentation, tissue classification, and disease diagnosis, collaborating with biologists and medical researchers to address real-world challenges in biomedical research and clinical practice.</p>
+                                <p>Key projects include automated analysis of histopathology images for cancer diagnosis, deep learning for medical image segmentation, and the development of the BisQue platform for bioimage management and analysis.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>3D Computer Vision</h3>
+                                <p>We work on various aspects of 3D computer vision, including 3D reconstruction from images, point cloud processing, and object detection and recognition in 3D data. Our research in this area has applications in robotics, autonomous driving, augmented reality, and environmental monitoring.</p>
+                                <p>Current projects focus on 3D object detection using transformer networks, self-supervised learning for depth estimation, and efficient algorithms for processing large-scale point clouds.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>Deep Learning for Visual Recognition</h3>
+                                <p>Our lab develops deep learning methods for various visual recognition tasks, including object detection, image classification, semantic segmentation, and action recognition. We work on both fundamental research to improve the accuracy, efficiency, and robustness of deep learning models, as well as applied research in specific domains.</p>
+                                <p>Recent projects include self-supervised learning for representation learning, efficient neural network architectures for edge devices, and domain adaptation for visual recognition in challenging environments.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="research-project">
+                            <div class="research-image" style="background-image: url('/api/placeholder/600/400')"></div>
+                            <div class="research-content">
+                                <h3>Environmental Monitoring</h3>
+                                <p>We apply computer vision and machine learning techniques to environmental monitoring, including the analysis of satellite and aerial imagery, underwater imagery, and ground-based sensors. Our work in this area contributes to understanding and addressing environmental challenges, such as climate change, biodiversity loss, and ecosystem health.</p>
+                                <p>Ongoing projects include automated coral reef monitoring using deep learning, change detection in satellite imagery for deforestation tracking, and computer vision for biodiversity monitoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parallax Section -->
+            <section class="parallax-section" style="background-image: url('/api/placeholder/1920/1080')">
+                <div class="parallax-overlay"></div>
+                <div class="parallax-content">
+                    <h2>Collaborative Research</h2>
+                    <p>We collaborate with researchers across disciplines to solve complex challenges in computer vision and machine learning.</p>
+                    <a href="#" class="btn" onclick="document.querySelector('[data-page=contact-page]').click()">Partner With Us</a>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="fade-in">
+                        <div class="accent-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <h2 class="section-title">Research Facilities</h2>
+                        <p class="section-subtitle">Our lab is equipped with state-of-the-art facilities to support cutting-edge research in computer vision.</p>
+                        
+                        <div class="features">
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Computing Infrastructure</h3>
+                                    <p>High-performance computing clusters with GPU acceleration for deep learning research, including NVIDIA A100 and V100 GPUs, and specialized hardware for computer vision applications.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Imaging Equipment</h3>
+                                    <p>Advanced cameras and imaging systems for data collection, including high-resolution cameras, 3D scanners, depth sensors, and specialized microscopy equipment.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-img" style="background-image: url('/api/placeholder/600/400')"></div>
+                                <div class="feature-content">
+                                    <h3>Collaborative Spaces</h3>
+                                    <p>Dedicated spaces for team meetings, collaborative research, and demonstrations, equipped with visualization displays and video conferencing capabilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page">
+            <section style="padding-top: 120px;">
+                <div class="container">
+                    <div class="accent-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="section-subtitle">Have questions or interested in collaborating? Get in touch with us.</p>
+                    
+                    <div class="contact-grid fade-in">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h3>Address</h3>
+                                <p>Vision Research Lab</p>
+                                <p>Department of Electrical and Computer Engineering</p>
+                                <p>University of California, Santa Barbara</p>
+                                <p>Santa Barbara, CA 93106</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:vrl@ece.ucsb.edu">vrl@ece.ucsb.edu</a></p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p>(805) 893-XXXX</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Lab Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                <p>Saturday - Sunday: Closed</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h3>Connect With Us</h3>
+                                <div class="social-links">
+                                    <a href="#" aria-label="Twitter">T</a>
+                                    <a href="#" aria-label="LinkedIn">L</a>
+                                    <a href="#" aria-label="GitHub">G</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="map">
+                                <!-- Placeholder for map -->
+                                <img src="/api/placeholder/600/300" alt="Map" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in" style="margin-top: 50px;">
+                        <h2 class="section-title">Contact Form</h2>
+                        <p class="section-subtitle">Send us a message and we'll get back to you as soon as possible.</p>
+                        
+                        <div class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Vision Research Lab</h3>
+                    <p>University of California, Santa Barbara</p>
+                    <p>Santa Barbara, CA 93106</p>
+                    <p>Email: vrl@ece.ucsb.edu</p>
+                    <p>Phone: (805) 893-XXXX</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" class="footer-link" onclick="document.querySelector('[data-page=home-page]').click()">Home</a></li>
+                        <li><a href="#" class="footer-link" onclick="document.querySelector('[data-page=people-page]').click()">People</a></li>
+                        <li><a href="#" class="footer-link" onclick="document.querySelector('[data-page=bisque-page]').click()">BisQue</a></li>
+                        <li><a href="#" class="footer-link" onclick="document.querySelector('[data-page=publications-page]').click()">Publications</a></li>
+                        <li><a href="#" class="footer-link" onclick="document.querySelector('[data-page=research-page]').click()">Research</a></li>
+                        <li><a href="#" class="footer-link" onclick="document.querySelector('[data-page=contact-page]').click()">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.ucsb.edu/" target="_blank">UCSB Main Website</a></li>
+                        <li><a href="https://engineering.ucsb.edu/" target="_blank">College of Engineering</a></li>
+                        <li><a href="https://www.ece.ucsb.edu/" target="_blank">Electrical & Computer Engineering</a></li>
+                        <li><a href="#" target="_blank">BisQue Platform</a></li>
+                        <li><a href="#" target="_blank">Student Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vision Research Lab, UC Santa Barbara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+            <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Add click event listener to each link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Get the page to show
+                    const pageId = this.getAttribute('data-page');
+                    
+                    // Hide all pages
+                    document.querySelectorAll('main > div').forEach(page => {
+                        page.classList.remove('active');
+                    });
+                    
+                    // Show the selected page
+                    document.getElementById(pageId).classList.add('active');
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.nav-links').classList.remove('show');
+                    
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                });
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinksList = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinksList.classList.toggle('show');
+            });
+            
+            // Parallax effect for hero backgrounds
+            window.addEventListener('load', function() {
+                // Check if any CSS code is visible as text and hide it
+                const bodyText = document.body.innerText;
+                const cssPattern = /\/\* Individual page section backgrounds \*\//;
+                if (cssPattern.test(bodyText)) {
+                    const elements = document.body.querySelectorAll('*');
+                    elements.forEach(el => {
+                        if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+                            const text = el.childNodes[0].nodeValue;
+                            if (cssPattern.test(text)) {
+                                el.style.display = 'none';
+                            }
+                        }
+                    });
+                }
+                
+                // Fix parallax backgrounds on page load
+                const parallaxSections = document.querySelectorAll('.parallax-section');
+                parallaxSections.forEach(section => {
+                    const bgImg = section.style.backgroundImage;
+                    if (bgImg) {
+                        // Force browser to reload the background image
+                        section.style.backgroundImage = 'none';
+                        setTimeout(() => {
+                            section.style.backgroundImage = bgImg;
+                        }, 10);
+                    }
+                });
+            });
+            
+            // Animation on scroll
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeIn = function() {
+                fadeElements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+            
+            // Initial check on load
+            fadeIn();
+            
+            // Check on scroll
+            window.addEventListener('scroll', fadeIn);
+            
+            // Scroll down button
+            const scrollDownBtn = document.querySelector('.scroll-down');
+            if (scrollDownBtn) {
+                scrollDownBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

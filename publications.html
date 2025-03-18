@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Vision Research Lab, UCSB</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/publications.css">
+</head>
+<body>
+    <!-- Include header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <section style="padding-top: 120px;">
+            <div class="container">
+                <div class="accent-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <h1 class="page-title">Publications</h1>
+                <p class="section-subtitle">Our research has been published in top-tier conferences and journals in the field of computer vision and machine learning.</p>
+                
+                <!-- Filter Controls -->
+                <div class="publication-filters fade-in">
+                    <h3>Filter Publications</h3>
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="year-filter">Year:</label>
+                            <select id="year-filter">
+                                <option value="">All Years</option>
+                                <!-- Years will be populated dynamically -->
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="category-filter">Category:</label>
+                            <select id="category-filter">
+                                <option value="">All Categories</option>
+                                <option value="recent">Recent Publications</option>
+                                <option value="book">Books & Chapters</option>
+                                <option value="patent">Patents</option>
+                            </select>
+                        </div>
+                        <button id="apply-filters" class="btn">Apply Filters</button>
+                        <button id="reset-filters" class="btn btn-outline">Reset</button>
+                    </div>
+                </div>
+                
+                <!-- Publications Container -->
+                <div id="publications-container">
+                    <!-- Publications will be loaded here dynamically -->
+                    <div class="loading-spinner">Loading publications...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html>
