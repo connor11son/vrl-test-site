@@ -4,8 +4,8 @@
       {
         "id": "complex-activity",
         "title": "Complex Activity Detection",
-        "imageBefore": "img/hoi-before.png",
-        "imageAfter": "img/hoi-after.png",
+        "imageBefore": "img/research/hoi-before.png",
+        "imageAfter": "img/research/hoi-after.png",
         "beforeLabel": "Raw Image",
         "afterLabel": "Activity Recognition",
         "description": [
@@ -15,8 +15,8 @@
       {
         "id": "biomedical",
         "title": "Biomedical Image Analysis",
-        "imageBefore": "img/biomedical-before.png",
-        "imageAfter": "img/biomedical-after.png",
+        "imageBefore": "img/research/biomedical-before.png",
+        "imageAfter": "img/research/biomedical-after.png",
         "beforeLabel": "Original Scan",
         "afterLabel": "Segmentation Mask",
         "description": [
@@ -26,8 +26,8 @@
       {
         "id": "materials",
         "title": "Materials Science",
-        "imageBefore": "img/materials-before.png",
-        "imageAfter": "img/materials-after.png",
+        "imageBefore": "img/research/materials-before.png",
+        "imageAfter": "img/research/materials-after.png",
         "beforeLabel": "Sparse EBSD map",
         "afterLabel": "High resolution",
         "description": [
@@ -37,8 +37,8 @@
       {
         "id": "wildlife",
         "title": "Wildlife Conservation",
-        "imageBefore": "img/wildlife-before.png",
-        "imageAfter": "img/wildlife-after.png",
+        "imageBefore": "img/research/wildlife-before.png",
+        "imageAfter": "img/research/wildlife-after.png",
         "beforeLabel": "Aerial Image",
         "afterLabel": "Detection Results",
         "description": [
@@ -49,8 +49,8 @@
       {
         "id": "geospatial",
         "title": "Geospatial Data Analysis",
-        "imageBefore": "img/geospatial-before.png",
-        "imageAfter": "img/geospatial-after.png",
+        "imageBefore": "img/research/geospatial-before.png",
+        "imageAfter": "img/research/geospatial-after.png",
         "beforeLabel": "Raw trajectories",
         "afterLabel": "Reeb graph",
         "description": [
