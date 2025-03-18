@@ -177,3 +177,25 @@
         padding: 4px 8px;
     }
 }
+
+.loading-indicator {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Error message */
+.error-message {
+    padding: 30px;
+    background-color: rgba(255, 235, 235, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+    margin-bottom: 30px;
+}
+
+.error-message h3 {
+    color: #c0392b;
+    margin-bottom: 10px;
+}

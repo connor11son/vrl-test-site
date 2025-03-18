@@ -1,0 +1,62 @@
+{
+    "projects": [
+        
+      {
+        "id": "complex-activity",
+        "title": "Complex Activity Detection",
+        "imageBefore": "img/hoi-before.png",
+        "imageAfter": "img/hoi-after.png",
+        "beforeLabel": "Raw Image",
+        "afterLabel": "Activity Recognition",
+        "description": [
+          "Understanding human activity from images and videos is one of the main goals of computer vision-based systems. Over the years, VRL researchers have developed algorithms to determine complex human activity in different modalities. In the past, the researchers from the lab have collaborated with various organizations in creating different systems and algorithms including an online system to detect atomic human activities from continuous video streams, person reidentification and activity detection algorithms etc."
+        ]
+      },
+      {
+        "id": "biomedical",
+        "title": "Biomedical Image Analysis",
+        "imageBefore": "img/biomedical-before.png",
+        "imageAfter": "img/biomedical-after.png",
+        "beforeLabel": "Original Scan",
+        "afterLabel": "Segmentation Mask",
+        "description": [
+          "High resolution imaging of molecules and cells will be critical for understanding complex systems such as the nervous system, whether it be for the localization of specific neuron types within a region of the central nervous system, the branching pattern of dendritic trees, or the localization of molecules at the subcellular levels. In collaboration with researchers in biology, we are developing new image analysis methods for quantifying complex biological phenomena."
+        ]
+      },
+      {
+        "id": "materials",
+        "title": "Materials Science",
+        "imageBefore": "img/materials-before.png",
+        "imageAfter": "img/materials-after.png",
+        "beforeLabel": "Sparse EBSD map",
+        "afterLabel": "High resolution",
+        "description": [
+          "Our research focuses on finding and generating natural structures in high-dimensional, multi-model, and multi-scale Material datasets using Physics-based Machine Learning and Deep Learning to accelerate Material discovery and close the gap in the processing-structure-properties (PSP) relationship. Each time getting data from physical experiments are time-consuming and costly. Therefore numerical simulation tools are used to generate synthetic data. However, results from existing physics-based numerical simulation models are not up to mark and computationally infeasible at high resolution in space and time. We are designing neural network-based generative models using physics to generate synthetic materials from given properties and structures."
+        ]
+      },
+      {
+        "id": "wildlife",
+        "title": "Wildlife Conservation",
+        "imageBefore": "img/wildlife-before.png",
+        "imageAfter": "img/wildlife-after.png",
+        "beforeLabel": "Aerial Image",
+        "afterLabel": "Detection Results",
+        "description": [
+          "Our wildlife conservation research leverages computer vision to monitor and protect endangered species. We develop algorithms for species identification, individual recognition, and behavior analysis from camera trap images, drone footage, and other wildlife monitoring data sources.",
+          "Current projects include automated census of wildlife populations, tracking migratory patterns, and detecting poaching activities using AI-powered camera systems. Our tools help conservation biologists collect and analyze data at scales previously impossible with manual methods, contributing to more effective conservation efforts."
+        ]
+      },
+      {
+        "id": "geospatial",
+        "title": "Geospatial Data Analysis",
+        "imageBefore": "img/geospatial-before.png",
+        "imageAfter": "img/geospatial-after.png",
+        "beforeLabel": "Raw trajectories",
+        "afterLabel": "Reeb graph",
+        "description": [
+          "Our anomaly detection research focuses on identifying unusual patterns or outliers in visual data. We develop self-supervised and weakly supervised learning approaches that can detect anomalies with minimal labeled data, applicable to industrial quality control, security monitoring, and medical diagnostics.",
+          "Current projects include unsupervised anomaly detection in manufacturing, detection of rare events in surveillance footage, and identification of unusual patterns in medical images that may indicate disease. Our methods combine deep learning with statistical approaches to achieve reliable detection with low false alarm rates."
+        ]
+      }
+    ]
+  }
