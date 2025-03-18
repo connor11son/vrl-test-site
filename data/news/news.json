@@ -1,0 +1,23 @@
+[
+    {
+      "title": "2025 BisQue Workshop",
+      "date": "2025-02-13",
+      "content": "The BisQue workshop took place on Febuary 12th to kickoff the newly-funded NSF project. The new NSF funding is to continue the development of the BisQue infrastructure and to \"close the loop\" between AI and end users. Over 40 researchers from materials science, computer vision, bioimaging, and conservation organizations gathered to discuss how BisQue can help facilitate machine learning into their workflows."
+    },
+    {
+      "title": "Shailja Awarded Lancaster Dissertation Award",
+      "date": "2024-06-03",
+      "content": "Shailja has been awarded the Lancaster Dissertation Award. She was given the mathematics, physical sciences and engineering award for her work using Reeb graphs to build topological models of the brain's connectomics. Shailja will be joining Stanford University as a post-doctoral to continue her work in the fall."
+    },
+    {
+      "title": "Satish Kumar: Schmidt Science Fellow",
+      "date": "2024-04-24",
+      "content": "Congratulations to VRL alumnus Satish Kumar on being named a 2024 Schmidt Science Fellow. Read more about it in [link1] article from Forbes.",
+      "links": [
+        {
+          "text": "this",
+          "url": "https://www.forbes.com/sites/michaeltnietzel/2024/04/24/the-schmidt-science-fellows-for-2024-are-announced/"
+        }
+      ]
+    }
+  ]
