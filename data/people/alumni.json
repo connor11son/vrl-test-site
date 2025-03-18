@@ -1,0 +1,684 @@
+{
+    "alumni": [
+      {
+        "name": "Satish Kumar",
+        "year": "2024",
+        "degree": "Ph.D.",
+        "thesis": "Building Efficient Vision Models for Ecological and Earth Observation Studies",
+        "position": "Stanford (Postdoctoral Fellow)"
+      },
+      {
+        "name": "S. Shailja",
+        "year": "2024",
+        "degree": "Ph.D",
+        "thesis": "Reeb graphs for topological connectomics",
+        "position": "Stanford (Postdoctoral Fellow)"
+      },
+      {
+        "name": "Kimia Afshari",
+        "year": "2024",
+        "degree": "M.S.",
+        "thesis": "N/A",
+        "position": "Teledyne FLIR"
+      },
+      {
+        "name": "Joaquin Giorgi",
+        "year": "2024",
+        "degree": "M.S.",
+        "thesis": "N/A",
+        "position": "—"
+      },
+      {
+        "name": "Devendra J",
+        "year": "2024",
+        "degree": "Ph.D.",
+        "thesis": "Enhancing Materials Microstructure Analysis with Physics-Informed Computer Vision",
+        "position": "Samsung Research America"
+      },
+      {
+        "name": "A S M Iftekhar",
+        "year": "2023",
+        "degree": "Ph.D",
+        "thesis": "Compositional Networks for Detecting and Localizing Activities",
+        "position": "Microsoft"
+      },
+      {
+        "name": "Michael Goebel",
+        "year": "2023",
+        "degree": "Ph.D",
+        "thesis": "Techniques for Visual Media Forensics",
+        "position": "Google"
+      },
+      {
+        "name": "Jiaxiang (Tom) Jiang",
+        "year": "2022",
+        "degree": "Ph.D.",
+        "thesis": "Segmentation, Tracking, and Shape Modeling for Microscopy Images",
+        "position": "Intel Labs"
+      },
+      {
+        "name": "Austin McEver",
+        "year": "2022",
+        "degree": "Ph.D (CS)",
+        "thesis": "Detection and Segmentation Using Less Supervision",
+        "position": "Meta"
+      },
+      {
+        "name": "Ekta Prashnani",
+        "year": "2022",
+        "degree": "Ph.D",
+        "thesis": "Data-driven Methods for Evaluating the Perceptual Quality and Authenticity of Visual Media",
+        "position": "NVIDIA"
+      },
+      {
+        "name": "Angela Zhang",
+        "year": "2021",
+        "degree": "Ph.D.",
+        "thesis": "Segmentation and Detection Methods to Connect Brain Structure and Function",
+        "position": "Abbott, Cyberdontics (now)"
+      },
+      {
+        "name": "Po-Yu Kao",
+        "year": "2019",
+        "degree": "Ph.D.",
+        "thesis": "Integrating Brain Connectome and Lesion Data for Patient Outcome Prediction",
+        "position": "Forceshield Inc (Taiwan), Insilico Medicine"
+      },
+      {
+        "name": "Oytun Ulutan",
+        "year": "2019",
+        "degree": "Ph.D.",
+        "thesis": "Attention Maps for Activity Detection in Videos",
+        "position": "Zoox"
+      },
+      {
+        "name": "Rahul Vishwakarma",
+        "year": "2019",
+        "degree": "M.S.",
+        "thesis": "—",
+        "position": "Hitachi"
+      },
+      {
+        "name": "Utkarsh Gaur",
+        "year": "2018",
+        "degree": "Ph.D (CS)",
+        "thesis": "Object Segmentation and Matching in Label Constrained Scenarios",
+        "position": "Synaptics Incorporated"
+      },
+      {
+        "name": "Kristian Kvilekval",
+        "year": "2018",
+        "degree": "Researcher",
+        "thesis": "n/a",
+        "position": "ViQi Inc"
+      },
+      {
+        "name": "Archith John Bency",
+        "year": "2018",
+        "degree": "Ph.D.",
+        "thesis": "Search Strategies for Localization in Images and Videos",
+        "position": "Intel"
+      },
+      {
+        "name": "Christian Lang",
+        "year": "2018",
+        "degree": "Researcher",
+        "thesis": "n/a",
+        "position": "ViQi Inc"
+      },
+      {
+        "name": "Thuyen Ngo",
+        "year": "2018",
+        "degree": "Ph.D.",
+        "thesis": "Foveated Vision Models for Search and Recognition",
+        "position": "Uber"
+      },
+      {
+        "name": "Dmitry Fedorov",
+        "year": "2018",
+        "degree": "Researcher",
+        "thesis": "n/a",
+        "position": "ViQi Inc"
+      },
+      {
+        "name": "Lingyun Song",
+        "year": "2018",
+        "degree": "Visiting Ph.D.",
+        "thesis": "n/a",
+        "position": "Xi'an Jiaotong University, Xi'an, China"
+      },
+      {
+        "name": "Carlos Torres",
+        "year": "2017",
+        "degree": "Ph.D.",
+        "thesis": "Multimodal Analytics for Healthcare",
+        "position": "Mayachitra, Inc."
+      },
+      {
+        "name": "Tao Deng",
+        "year": "2017",
+        "degree": "Visiting Ph.D.",
+        "thesis": "n/a",
+        "position": "University of Electronic Science and Technology of China, Chengdu, China"
+      },
+      {
+        "name": "Xudong Lin",
+        "year": "2017",
+        "degree": "Visiting B.S.",
+        "thesis": "n/a",
+        "position": "Columbia University"
+      },
+      {
+        "name": "Zency Young",
+        "year": "2017",
+        "degree": "Visiting M.S.",
+        "thesis": "n/a",
+        "position": "Peking University"
+      },
+      {
+        "name": "Amir Mohaymen Rahimi",
+        "year": "2016",
+        "degree": "Ph.D.",
+        "thesis": "Sensor Fusion with Conditional Random Fields",
+        "position": "HRL Laboratories"
+      },
+      {
+        "name": "Wenhui Jiang",
+        "year": "2016",
+        "degree": "Visiting Ph.D.",
+        "thesis": "n/a",
+        "position": "Beijing University of Posts and Telecommunications, Beijing, China"
+      },
+      {
+        "name": "Hui Hu",
+        "year": "2015",
+        "degree": "Researcher",
+        "thesis": "n/a",
+        "position": "RE Touch Lab, UCSB"
+      },
+      {
+        "name": "Christopher Wheat",
+        "year": "2015",
+        "degree": "Researcher",
+        "thesis": "n/a",
+        "position": "—"
+      },
+      {
+        "name": "Lakshmanan Nataraj",
+        "year": "2015",
+        "degree": "Ph.D.",
+        "thesis": "A Signal Processing Approach To Malware Analysis",
+        "position": "Mayachitra, Inc."
+      },
+      {
+        "name": "Niloufar Pourian",
+        "year": "2015",
+        "degree": "Ph.D.",
+        "thesis": "Localized visual feature representations for classification and visual search",
+        "position": "Intel Corporation"
+      },
+      {
+        "name": "Santhoshkumar Sunderrajan",
+        "year": "2014",
+        "degree": "Ph.D.",
+        "thesis": "Contextual Analysis of Camera Networks",
+        "position": "Pinger"
+      },
+      {
+        "name": "Diana Delibaltov",
+        "year": "2014",
+        "degree": "Ph.D.",
+        "thesis": "Automated and Interactive Segmentation Methods for 5D Microscopy Images",
+        "position": "Google"
+      },
+      {
+        "name": "S. Karthikeyan",
+        "year": "2014",
+        "degree": "Ph.D.",
+        "thesis": "Modeling Eye Tracking Data with Application to Object Detection",
+        "position": "Synaptics"
+      },
+      {
+        "name": "Aruna Jammalamadaka",
+        "year": "2014",
+        "degree": "Ph.D.",
+        "thesis": "Spatial pattern modeling and discovery in biological images",
+        "position": "HRL Laboratories, LLC"
+      },
+      {
+        "name": "Julian Yarkony",
+        "year": "2013",
+        "degree": "Postdoc",
+        "thesis": "—",
+        "position": "Experian"
+      },
+      {
+        "name": "Thomas Kuo",
+        "year": "2013",
+        "degree": "Ph.D.",
+        "thesis": "Design and Calibration of Wide-Area Camera Networks",
+        "position": "PowWow Energy, Inc."
+      },
+      {
+        "name": "Carter De Leo",
+        "year": "2013",
+        "degree": "Ph.D.",
+        "thesis": "Human Motivated Multicamera Video Analytics",
+        "position": "Google"
+      },
+      {
+        "name": "Vignesh Jagadeesh",
+        "year": "2013",
+        "degree": "Ph.D.",
+        "thesis": "Labeling Large Scale Image Datasets",
+        "position": "eBay Research"
+      },
+      {
+        "name": "Jiejun Xu",
+        "year": "2013",
+        "degree": "Ph.D (CS)",
+        "thesis": "Graph-based Transductive Learning for Visual Classification and Retrieval",
+        "position": "HRL, Malibu"
+      },
+      {
+        "name": "Swapna Joshi",
+        "year": "2012",
+        "degree": "Ph.D.",
+        "thesis": "Multi-modal Parts based Regression",
+        "position": "Theranos Inc."
+      },
+      {
+        "name": "Zefeng Ni",
+        "year": "2012",
+        "degree": "Ph.D.",
+        "thesis": "Object Tracking and Searching in a Distributed Camera Network",
+        "position": "University of Technology, Sydney"
+      },
+      {
+        "name": "Gautam Korlam",
+        "year": "2012",
+        "degree": "M.S.",
+        "thesis": "High Throughput Image Analysis using Low-Cost Cloud Computing",
+        "position": "Lookout, San Francisco"
+      },
+      {
+        "name": "Manuel Arturo Deza",
+        "year": "2012",
+        "degree": "Visiting B.S.",
+        "thesis": "Neuron tracing",
+        "position": "BS, Univeridad Nacional de Ingenieria, Lima, Peru."
+      },
+      {
+        "name": "Manesh Kokare, PhD",
+        "year": "2012",
+        "degree": "Visiting Researcher",
+        "thesis": "Diabetic Retinopathy: detection and classification of fundus images",
+        "position": "(BOYCAST Post Doctoral Research Fellow) Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded"
+      },
+      {
+        "name": "Golnaz Abdollahian",
+        "year": "2011",
+        "degree": "Postdoc",
+        "thesis": "n/a",
+        "position": "PhD, Purdue University"
+      },
+      {
+        "name": "Pratim Ghosh",
+        "year": "2011",
+        "degree": "Ph.D.",
+        "thesis": "Simultaneous Registration and Tracking",
+        "position": "Microsoft"
+      },
+      {
+        "name": "Enrique Alegre",
+        "year": "2010",
+        "degree": "Visiting Researcher",
+        "thesis": "Professor of Computer Science, Universidad de León,24071,León",
+        "position": "Dpto. Ingeniería Eléctrica, Sistemas y Automática, Universidad de León, Spain"
+      },
+      {
+        "name": "Mehmet Emre Sargin",
+        "year": "2010",
+        "degree": "Ph.D.",
+        "thesis": "Probabilistic Graphical Models for Motion Analysis and Object Tracking",
+        "position": "Google"
+      },
+      {
+        "name": "James Kleban",
+        "year": "2010",
+        "degree": "Ph.D.",
+        "thesis": "Content-based Management of Image Databases in the Internet Age",
+        "position": "Microsoft"
+      },
+      {
+        "name": "Luca Bertelli",
+        "year": "2009",
+        "degree": "Ph.D.",
+        "thesis": "Variational Image Segmentation Based on Pixel Pairwise Similarities",
+        "position": "Mayachitra, Inc., Santa Barbara, CA (2009); Like.Com and Google (2010- present)"
+      },
+      {
+        "name": "Emily Moxley",
+        "year": "2009",
+        "degree": "Ph.D.",
+        "thesis": "Multimedia Annotation through Search and Mining",
+        "position": "Google"
+      },
+      {
+        "name": "Anindya Sarkar",
+        "year": "2009",
+        "degree": "Ph.D.",
+        "thesis": "Novel Image Data-Hiding Methodologies for Robust and Secure Steganography with Extensions to Image Forensics",
+        "position": "BioImagene; now Rosch."
+      },
+      {
+        "name": "Elisa Drelie Gelasca",
+        "year": "2009",
+        "degree": "Researcher",
+        "thesis": "PhD from EPFL.",
+        "position": "—"
+      },
+      {
+        "name": "Minghui Tian",
+        "year": "2009",
+        "degree": "Visiting Ph.D.",
+        "thesis": "Visual Saliency Modeling and Salient Objects Detection",
+        "position": "Computer Science Dept., University of Science and Technology of China"
+      },
+      {
+        "name": "Zhiqiang Bi",
+        "year": "2008",
+        "degree": "Researcher",
+        "thesis": "n/a",
+        "position": "Yahoo!"
+      },
+      {
+        "name": "Michael Quinn",
+        "year": "2008",
+        "degree": "Ph.D.",
+        "thesis": "Toward Persistent Tracking and Identification in Camera Sensor Networks",
+        "position": "Mathworks, Natick, MA"
+      },
+      {
+        "name": "Nhat Vu",
+        "year": "2008",
+        "degree": "Ph.D.",
+        "thesis": "Image Segmentation with Semantic Priors: A Graph Cut Approach",
+        "position": "Fair Isaac, San Rafael, CA"
+      },
+      {
+        "name": "Laura Boucheron",
+        "year": "2008",
+        "degree": "Ph.D.",
+        "thesis": "Object and Spatial Level Quantitative Analysis of Multispectral Histopathology Images ..",
+        "position": "Associate Professor, New Mexico State University"
+      },
+      {
+        "name": "Jiyun Byun",
+        "year": "2007",
+        "degree": "Ph.D.",
+        "thesis": "Quantitative Analysis and Modeling of Confocal Retinal Images",
+        "position": "Mayachitra, Inc., Santa Barbara, CA."
+      },
+      {
+        "name": "Charles Kenney",
+        "year": "2007",
+        "degree": "Faculty",
+        "thesis": "n/a",
+        "position": "Dr. Kenney was a VRL faculty affiliate till he retired in 2007."
+      },
+      {
+        "name": "Ibrahim El-Khalil",
+        "year": "2006",
+        "degree": "M.S.",
+        "thesis": "n/a",
+        "position": "Boeing Satellite Systems, El Segundo, CA"
+      },
+      {
+        "name": "Marco Zuliani",
+        "year": "2006",
+        "degree": "Ph.D.",
+        "thesis": "Computational Methods for Automatic Image Registration",
+        "position": "Apple Inc., Cupertino, CA."
+      },
+      {
+        "name": "Motaz El-Saban",
+        "year": "2005",
+        "degree": "Ph.D.",
+        "thesis": "Automated Microtubule Tracking and Analysis",
+        "position": "Cairo University and Microsoft, Egypt"
+      },
+      {
+        "name": "Kaushal Solanki",
+        "year": "2005",
+        "degree": "Ph.D.",
+        "thesis": "Multimedia Data Hiding: From Fundamental Issues to Practical Techniques",
+        "position": "Mayachitra, Inc., Santa Barbara, CA. (2005-10); EyeNuk (2010-current)."
+      },
+      {
+        "name": "Ken Sullivan",
+        "year": "2005",
+        "degree": "Ph.D.",
+        "thesis": "Image Steganalysis: Hunting & Escaping",
+        "position": "Mayachitra, Inc., Santa Barbara, CA."
+      },
+      {
+        "name": "Sitaram Bhagavathy",
+        "year": "2005",
+        "degree": "Ph.D.",
+        "thesis": "Modeling and Detection of Geospatial Objects Using Texture Motifs",
+        "position": "Thomson corporate research (2005-10). Currently at Google."
+      },
+      {
+        "name": "Takao Ito",
+        "year": "2004",
+        "degree": "Visiting Ph.D.",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Gosuke Ohashi",
+        "year": "2004",
+        "degree": "Visiting Ph.D.",
+        "thesis": "—",
+        "position": "Associate Professor, Department of Electrical and Electronic Engineering, Faculty of Engineering, Shizuoka University, Japan"
+      },
+      {
+        "name": "Till Quack",
+        "year": "2004",
+        "degree": "Visiting M.S.",
+        "thesis": "Cortina: A System for Large Scale, Content-based Web Image Retrieval and the Semantics within",
+        "position": "ETH Zurich"
+      },
+      {
+        "name": "Daniela M. U. Sabino",
+        "year": "2004",
+        "degree": "Visiting Ph.D.",
+        "thesis": "Lymphoid leukemia diagnostics assisted by computer.",
+        "position": "PhD form Instituto de Física de São Carlos - USP, Brazil. Currently at Ablevision, Brazil."
+      },
+      {
+        "name": "Baris Sumengen",
+        "year": "2004",
+        "degree": "Ph.D.",
+        "thesis": "Variational Image Segmentation and Curve Evolution on Natural Images",
+        "position": "Ojos Inc., Redwood City, CA. (was Like.com till 2010). Now at Google."
+      },
+      {
+        "name": "Xinding Sun",
+        "year": "2004",
+        "degree": "Ph.D.",
+        "thesis": "Motion Activity for Video Indexing",
+        "position": "Microsoft Corporation, Redmond, WA"
+      },
+      {
+        "name": "Jelena Tešić",
+        "year": "2004",
+        "degree": "Ph.D.",
+        "thesis": "Managing Large-Scale Multimedia Repositories",
+        "position": "IBM T. J. Watson Research Center, Hawthorne, NY (2004-09); Mayachitra, 2009-"
+      },
+      {
+        "name": "Shawn Newsam",
+        "year": "2003",
+        "degree": "Ph.D.",
+        "thesis": "Texture Motifs in Remote Sensed Imagery",
+        "position": "Lawrence Livermore National Lab, Livermore, California. University of California Merced"
+      },
+      {
+        "name": "Ching-Wei Chen",
+        "year": "2001",
+        "degree": "M.S.",
+        "thesis": "ClassAid: An Automated Lecture Note-Taking System",
+        "position": "Dolby laboratories, San Francisco"
+      },
+      {
+        "name": "Peng Wu",
+        "year": "2001",
+        "degree": "Ph.D.",
+        "thesis": "Search and Indexing in High-dimensional Feature Spaces",
+        "position": "Imaging Systems Laboratory, HP Labs, Palo Alto, CA"
+      },
+      {
+        "name": "Jong-Jin Chae",
+        "year": "2000",
+        "degree": "Ph.D.",
+        "thesis": "Robust Techniques for Hiding Data in Images and Video",
+        "position": "Last seen at MarcAny Inc., Seoul, S. Korea"
+      },
+      {
+        "name": "Kapil Chhabra",
+        "year": "2000",
+        "degree": "M.S.",
+        "thesis": "Image texture for content based retrieval",
+        "position": "CISCO, USA"
+      },
+      {
+        "name": "Daryl Fortney",
+        "year": "2000",
+        "degree": "M.S.",
+        "thesis": "Face Tracking",
+        "position": "Daryl spent a couple of years working in Santa Barbara for a local robotic company, Computer Motion, but decided to take up something more adventurous."
+      },
+      {
+        "name": "Naveen Reddy",
+        "year": "2000",
+        "degree": "M.S.",
+        "thesis": "Image Processor System Architecture and PCi Bus Board Design to Perform Real Time Two Dimensional Image Convolutions.",
+        "position": "Hughes Communications Ltd, El Segando, California"
+      },
+      {
+        "name": "Yining Deng",
+        "year": "1999",
+        "degree": "Ph.D.",
+        "thesis": "A Region Based Representation for Image and Video Retrieval",
+        "position": "Imaging Systems Laboratory, HP Labs, Palo Alto, CA"
+      },
+      {
+        "name": "David Lane",
+        "year": "1999",
+        "degree": "M.S.",
+        "thesis": "Video-in-Video Data Hiding",
+        "position": "MIT Lincoln Lab"
+      },
+      {
+        "name": "Jay (Albert) Winkeler",
+        "year": "1999",
+        "degree": "M.S.",
+        "thesis": "Active Vision",
+        "position": "Boeing, St. Louis, Missouri"
+      },
+      {
+        "name": "Rolf Schyoen",
+        "year": "1998",
+        "degree": "M.S.",
+        "thesis": "n/a",
+        "position": "Computer Motion, Goleta, California"
+      },
+      {
+        "name": "Norbert Strobel",
+        "year": "1998",
+        "degree": "Ph.D.",
+        "thesis": "Quadratic Filters for Image Contrast Enhancement",
+        "position": "Siemens, Germany"
+      },
+      {
+        "name": "George Haley",
+        "year": "1997",
+        "degree": "M.S.",
+        "thesis": "Image Texture Analysis",
+        "position": "—"
+      },
+      {
+        "name": "Wei-Ying Ma",
+        "year": "1997",
+        "degree": "Ph.D.",
+        "thesis": "Netra: A Toolbox for Navigating Large Image Databases",
+        "position": "HP Labs, Palo Alto; Microsoft Research China, Beijing; ByteDance, China"
+      },
+      {
+        "name": "Hui Li",
+        "year": "1993",
+        "degree": "Ph.D.",
+        "thesis": "Multisensor Image Registration and Fusion",
+        "position": "Google, LinkedIn (2012-)"
+      },
+      {
+        "name": "Kevin Tsai",
+        "year": "1993",
+        "degree": "M.S.",
+        "thesis": "n/a",
+        "position": "Cisco"
+      },
+      {
+        "name": "Suhail Chakravarty",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Griffin Danninger",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Akshay Heda",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Aditya Jonnalagadda",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Calvin Jenkins",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Nathan Netanyahu",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      },
+      {
+        "name": "Ziming Qi",
+        "year": "—",
+        "degree": "—",
+        "thesis": "—",
+        "position": "—"
+      }
+    ]
+  }
+  

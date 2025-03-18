@@ -331,3 +331,26 @@
         width: 30%;
     }
 }
+
+/* Loading state for alumni data */
+.alumni-loading tbody tr td {
+    animation: pulse 1.5s infinite;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--text-secondary);
+}
+
+@keyframes pulse {
+    0% { background-color: rgba(0, 0, 0, 0.03); }
+    50% { background-color: rgba(0, 0, 0, 0.07); }
+    100% { background-color: rgba(0, 0, 0, 0.03); }
+}
+
+/* Error message for alumni loading */
+.alumni-error {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 235, 235, 0.7);
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+    color: #c0392b;
+}
