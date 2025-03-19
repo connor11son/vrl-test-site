@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://connor11son.github.io/vrl-test-site/sitemap.xml
