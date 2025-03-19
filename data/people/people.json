@@ -11,6 +11,15 @@
       }
     ],
     "graduateStudents": [
+     {
+        "name": "Amil Khan 2",
+        "role": "Ph.D. Student",
+        "photo": "img/people/amil.jpg",
+        "shortRole": "Ph.D. Student",
+        "bio": "Research focuses on machine learning and computer vision.",
+        "research": "CV, ML",
+        "email": "amilkhan@ucsb.edu"
+      },
       {
         "name": "Amil Khan",
         "role": "Ph.D. Student",
