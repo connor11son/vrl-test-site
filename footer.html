@@ -3,14 +3,6 @@
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
-                <h3>Vision Research Lab</h3>
-                <p>University of California, Santa Barbara</p>
-                <p>Santa Barbara, CA 93106</p>
-                <p>Email: vrl@ece.ucsb.edu</p>
-                <p>Phone: (805) 893-XXXX</p>
-            </div>
-            
-            <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html" class="footer-link">Home</a></li>
@@ -28,14 +20,22 @@
                     <li><a href="https://www.ucsb.edu/" target="_blank">UCSB Main Website</a></li>
                     <li><a href="https://engineering.ucsb.edu/" target="_blank">College of Engineering</a></li>
                     <li><a href="https://www.ece.ucsb.edu/" target="_blank">Electrical & Computer Engineering</a></li>
-                    <li><a href="#" target="_blank">BisQue Platform</a></li>
-                    <li><a href="#" target="_blank">Student Resources</a></li>
                 </ul>
             </div>
         </div>
         
+        <!-- ECE Department Section -->
+        <div class="department-section">
+            <a href="https://www.ece.ucsb.edu/" target="_blank" class="department-link">
+                <img src="img/logos/ece-logo.png" alt="ECE Logo" class="department-logo">
+                <div class="department-info">
+                    <span>Department of Electrical and Computer Engineering</span>
+                </div>
+            </a>
+        </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2025 Vision Research Lab, UC Santa Barbara. All rights reserved.</p>
+            <p>Vision Research Lab, UCSB</p>
         </div>
     </div>
 </footer>
@@ -50,17 +50,17 @@
         
         // Set active class for navigation
         if (page === "index.html" || page === "") {
-            document.getElementById('home-link').classList.add('active');
+            document.getElementById('home-link')?.classList.add('active');
         } else if (page === "people.html") {
-            document.getElementById('people-link').classList.add('active');
+            document.getElementById('people-link')?.classList.add('active');
         } else if (page === "bisque.html") {
-            document.getElementById('bisque-link').classList.add('active');
+            document.getElementById('bisque-link')?.classList.add('active');
         } else if (page === "publications.html") {
-            document.getElementById('publications-link').classList.add('active');
+            document.getElementById('publications-link')?.classList.add('active');
         } else if (page === "research.html") {
-            document.getElementById('research-link').classList.add('active');
+            document.getElementById('research-link')?.classList.add('active');
         } else if (page === "contact.html") {
-            document.getElementById('contact-link').classList.add('active');
+            document.getElementById('contact-link')?.classList.add('active');
         }
     });
 </script>
