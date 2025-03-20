@@ -1,3 +1,22 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* This will make the main content expand to fill available space */
+}
+
+footer {
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
