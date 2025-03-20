@@ -1,127 +1,138 @@
 {
-    "faculty": [
-      {
-        "name": "Dr. B.S. Manjunath",
-        "role": "Lab Director, Professor",
-        "photo": "img/people/manj1.jpg",
-        "shortRole": "Principle Investigator",
-        "bio": "Dr. Manjunath leads the Vision Research Lab at UCSB, focusing on computer vision, image processing, and machine learning applications.",
-        "research": "Computer Vision, Machine Learning, Image Processing",
-        "email": "manj@ucsb.edu"
-      }
-    ],
-    "graduateStudents": [
-      {
-        "name": "Amil Khan",
-        "role": "Ph.D. Student",
-        "photo": "img/people/amil.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Research focuses on machine learning and computer vision.",
-        "research": "CV, ML",
-        "email": "amilkhan@ucsb.edu"
-      },
-      {
-        "name": "Umang Garg",
-        "role": "Ph.D. Student",
-        "photo": "img/people/umang.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Working on advanced computer vision algorithms.",
-        "research": "Computer Vision",
-        "email": "umanggarg@ucsb.edu"
-      },
-      {
-        "name": "Charvi Mendiratta",
-        "role": "M.S. Student",
-        "photo": "img/people/charvi.jpg",
-        "shortRole": "M.S. Student",
-        "bio": "Specializes in image processing and analysis.",
-        "research": "Image Processing",
-        "email": "charvi@ucsb.edu"
-      },
-      {
-        "name": "Md Awsafur Rahman",
-        "role": "Ph.D. Student",
-        "photo": "img/people/awsaf.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Researching deep learning applications for computer vision.",
-        "research": "Deep Learning",
-        "email": "mdawsafurrahman@ucsb.edu"
-      },
-      {
-        "name": "Anantajit Subrahmanya",
-        "role": "Ph.D. Student",
-        "photo": "img/people/anantajit.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Working on machine learning algorithms for visual data.",
-        "research": "ML, Visual Data Analysis",
-        "email": "anantajit@ucsb.edu"
-      },
-      {
-        "name": "Bowen Zhang",
-        "role": "Ph.D. Student",
-        "photo": "img/people/bowen.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Researching computer vision applications.",
-        "research": "Computer Vision",
-        "email": "bowenzhang@ucsb.edu"
-      },
-      {
-        "name": "Hardik Prajapati",
-        "role": "Ph.D. Student",
-        "photo": "img/people/hardik.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Working on deep learning for computer vision tasks.",
-        "research": "Deep Learning, CV",
-        "email": "hardikprajapati@ucsb.edu"
-      },
-      {
-        "name": "Raphael Ruschel",
-        "role": "Ph.D. Student",
-        "photo": "img/people/raphael.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Researching advanced computer vision algorithms.",
-        "research": "CV, ML",
-        "email": "raphaelruschel@ucsb.edu"
-      },
-      {
-        "name": "Pushpita Joardar",
-        "role": "Ph.D. Student",
-        "photo": "img/people/pushpita.jpg",
-        "shortRole": "Ph.D. Student",
-        "bio": "Focusing on computer vision and image analysis.",
-        "research": "Computer Vision",
-        "email": "pushpitajoardar@ucsb.edu"
-      }
-    ],
-    "researchers": [
-      {
-        "name": "Chandrakanth Gudavalli",
-        "role": "Research Engineer",
-        "photo": "img/people/chandrakanth.jpg",
-        "shortRole": "Research Engineer",
-        "bio": "Specializes in computer vision and deep learning research.",
-        "research": "Computer Vision, Deep Learning",
-        "email": "chandrakanth@ucsb.edu"
-      },
-      {
-        "name": "Connor Levenson",
-        "role": "Research Engineer",
-        "photo": "img/people/connor.jpg",
-        "shortRole": "Research Engineer",
-        "bio": "Works on computer vision and machine learning applications.",
-        "research": "Computer Vision, Machine Learning",
-        "email": "connor@ucsb.edu"
-      }
-    ],
-    "undergraduates": [
-      {
-        "name": "Nikhil Kuniyil",
-        "role": "Undergraduate Researcher",
-        "photo": "img/people/nikhil.jpg",
-        "shortRole": "Undergraduate Researcher",
-        "bio": "Contributing to computer vision research projects.",
-        "research": "Computer Vision",
-        "email": "nikhilkuniyil@ucsb.edu"
-      }
-    ]
-  }
+  "faculty": [
+    {
+      "name": "Dr. B.S. Manjunath",
+      "role": "Principal Investigator, Professor",
+      "photo": "img/people/manj1.jpg",
+      "shortRole": "Principle Investigator",
+      "bio": "Dr. Manjunath leads the Vision Research Lab at UCSB, focusing on computer vision, image processing, and machine learning applications.",
+      "research": "Computer Vision, Machine Learning, Image Processing",
+      "email": "manj@ucsb.edu"
+    }
+  ],
+  "graduateStudents": [
+    {
+      "name": "Amil Khan",
+      "role": "Ph.D. Student",
+      "photo": "img/people/amil.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "amil@ucsb.edu",
+      "website": ""
+    },
+    {
+      "name": "Umang Garg",
+      "role": "Ph.D. Student",
+      "photo": "img/people/umang.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "umang@ucsb.edu"
+    },
+    {
+      "name": "Charvi Mendiratta",
+      "role": "M.S. Student",
+      "photo": "img/people/charvi.jpg",
+      "shortRole": "M.S. Student",
+      "bio": "",
+      "research": "",
+      "email": "charvi@ucsb.edu",
+      "website": "https://www.linkedin.com/in/charvi077/"
+    },
+    {
+      "name": "Md Awsafur Rahman",
+      "role": "Ph.D. Student",
+      "photo": "img/people/awsaf.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "Doing research on Intersection between Computer Vision, NLP and Audio Processing.",
+      "research": "Multi-modal LLM, Media Forensics, Generative AI",
+      "email": "awsaf@ucsb.edu",
+      "website": "https://awsaf49.github.io/"
+    },
+    {
+      "name": "Anantajit Subrahmanya",
+      "role": "Ph.D. Student",
+      "photo": "img/people/anantajit.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "anantajit@ucsb.edu",
+      "website": "https://anantajit.com"
+    },
+    {
+      "name": "Bowen Zhang",
+      "role": "Ph.D. Student",
+      "photo": "img/people/bowen.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "bowen68@ucsb.edu",
+      "website":""
+    },
+    {
+      "name": "Hardik Prajapati",
+      "role": "Ph.D. Student",
+      "photo": "img/people/hardik.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "hp.6318@gmail.com",
+      "website": "https://hp6318.github.io/Hardik_Profile/"
+    },
+    {
+      "name": "Raphael Ruschel",
+      "role": "Ph.D. Student",
+      "photo": "img/people/raphael.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "",
+      "website": ""
+    },
+    {
+      "name": "Pushpita Joardar",
+      "role": "Ph.D. Student",
+      "photo": "img/people/pushpita.jpg",
+      "shortRole": "Ph.D. Student",
+      "bio": "",
+      "research": "",
+      "email": "",
+      "website": ""
+    }
+  ],
+  "researchers": [
+    {
+      "name": "Chandrakanth Gudavalli",
+      "role": "Research Engineer",
+      "photo": "img/people/chandrakanth.jpg",
+      "shortRole": "Research Engineer",
+      "bio": "I am broadly enthusiastic towards machine learning that mimics capabilities of human intelligence. My specific areas of interest include Structure from Motion, Image Registration, Human Pattern of Life Modelling, Multimodal Anomaly Detection, Image forensics, Deepfake synthesis, Signal Processing/Vision based malware detection, and most importantly MLOps.",
+      "research": "Computer Vision, Deep Learning",
+      "email": "chandrakanth@ucsb.edu",
+      "website": "https://www.chandrakanthgudavalli.com/"
+    },
+    {
+      "name": "Connor Levenson",
+      "role": "Research Engineer",
+      "photo": "img/people/connor.jpg",
+      "shortRole": "Research Engineer",
+      "bio": "I am broadly interested in intelligence, whether natural or artificial. I am also interested in how machine learning can accelerate scientific research across different domains.",
+      "research": "Machine Learning, Cyber Infrastructure",
+      "email": "clevenson@ucsb.edu",
+      "website": "https://www.linkedin.com/in/connor11son/"
+    }
+  ],
+  "undergraduates": [
+    {
+      "name": "Nikhil Kuniyil",
+      "role": "Undergraduate Researcher",
+      "photo": "img/people/nikhil.jpg",
+      "shortRole": "Undergraduate Researcher",
+      "bio": "",
+      "research": "Computer Vision",
+      "email": "nikhilkuniyil@ucsb.edu",
+      "website": "https://www.linkedin.com/in/nikhil-kuniyil-5a2978243/"
+    }
+  ]
+}

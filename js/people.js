@@ -119,6 +119,18 @@ document.addEventListener('DOMContentLoaded', function() {
         emailLink.textContent = person.email;
         email.appendChild(emailLink);
         details.appendChild(email);
+
+        // Add website link if person has a website
+        if (person.website) {
+            const website = document.createElement('p');
+            website.className = 'member-website';
+            const websiteLink = document.createElement('a');
+            websiteLink.href = person.website;
+            websiteLink.target = '_blank';
+            websiteLink.textContent = 'Website';
+            website.appendChild(websiteLink);
+            details.appendChild(website);
+        }
         
         teamMember.appendChild(details);
         
