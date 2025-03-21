@@ -7,7 +7,7 @@
       "shortRole": "Principle Investigator",
       "bio": "Dr. Manjunath leads the Vision Research Lab at UCSB, focusing on computer vision, image processing, and machine learning applications.",
       "research": "Computer Vision, Machine Learning, Image Processing",
-      "email": "manj@ucsb.edu"
+      "email": "manj at ucsb dotedu"
     }
   ],
   "graduateStudents": [
@@ -18,7 +18,7 @@
       "shortRole": "Ph.D. Student",
       "bio": "",
       "research": "",
-      "email": "amil@ucsb.edu",
+      "email": "amil at ucsb dotedu",
       "website": ""
     },
     {
@@ -28,7 +28,7 @@
       "shortRole": "Ph.D. Student",
       "bio": "",
       "research": "",
-      "email": "umang@ucsb.edu"
+      "email": "umang at ucsb dotedu"
     },
     {
       "name": "Charvi Mendiratta",
@@ -37,7 +37,7 @@
       "shortRole": "M.S. Student",
       "bio": "",
       "research": "",
-      "email": "charvi@ucsb.edu",
+      "email": "charvi at ucsb dotedu",
       "website": "https://www.linkedin.com/in/charvi077/"
     },
     {
@@ -47,7 +47,7 @@
       "shortRole": "Ph.D. Student",
       "bio": "Doing research on Intersection between Computer Vision, NLP and Audio Processing.",
       "research": "Multi-modal LLM, Media Forensics, Generative AI",
-      "email": "awsaf@ucsb.edu",
+      "email": "awsaf at ucsb dot edu",
       "website": "https://awsaf49.github.io/"
     },
     {
@@ -57,7 +57,7 @@
       "shortRole": "Ph.D. Student",
       "bio": "",
       "research": "",
-      "email": "anantajit@ucsb.edu",
+      "email": "anantajit at ucsb dot edu",
       "website": "https://anantajit.com"
     },
     {
@@ -67,7 +67,7 @@
       "shortRole": "Ph.D. Student",
       "bio": "",
       "research": "",
-      "email": "bowen68@ucsb.edu",
+      "email": "bowen68 at ucsb dot edu",
       "website":""
     },
     {
@@ -77,18 +77,18 @@
       "shortRole": "Ph.D. Student",
       "bio": "",
       "research": "",
-      "email": "hp.6318@gmail.com",
+      "email": "hp.6318 at gmail dot com",
       "website": "https://hp6318.github.io/Hardik_Profile/"
     },
     {
       "name": "Raphael Ruschel",
       "role": "Ph.D. Student",
       "photo": "img/people/raphael.jpg",
-      "shortRole": "Ph.D. Student",
-      "bio": "",
-      "research": "",
-      "email": "",
-      "website": ""
+      "shortRole": "Ph.D. Candidate",
+      "bio": "My research at UCSB has focused on developing transformer-based architectures that model human activities with significantly improved accuracy. I've created dynamic scene-graph generation algorithms that achieved 400%+ recall improvement in real-world scenarios and engineered temporally consistent tracking pipelines that doubled temporal recall on the Action Genome dataset. I've also engineered multi-camera synthetic data generation systems using Unity Engine, featuring parametrized human models with skeletal animations and physics-based interactions. This work has enhanced our ability to train robust models for production environments. Beyond research, I've mentored over 500 students as a Graduate Teaching Assistant in Machine Learning, Computer Vision, and Digital Image Processing courses, earning the Outstanding Teaching Assistant award three times.",
+      "research": "Complex Actvitiy Detection",
+      "email": "raphael251 at ucsb dot edu",
+      "website": "https://www.linkedin.com/in/raphaelruschel"
     },
     {
       "name": "Pushpita Joardar",
@@ -119,7 +119,7 @@
       "shortRole": "Research Engineer",
       "bio": "I am broadly interested in intelligence, whether natural or artificial. I am also interested in how machine learning can accelerate scientific research across different domains.",
       "research": "Machine Learning, Cyber Infrastructure",
-      "email": "clevenson@ucsb.edu",
+      "email": "clevenson at ucsb dotedu",
       "website": "https://www.linkedin.com/in/connor11son/"
     }
   ],
@@ -131,7 +131,7 @@
       "shortRole": "Undergraduate Researcher",
       "bio": "",
       "research": "Computer Vision",
-      "email": "nikhilkuniyil@ucsb.edu",
+      "email": "nikhilkuniyil at ucsb dot edu",
       "website": "https://www.linkedin.com/in/nikhil-kuniyil-5a2978243/"
     }
   ]
