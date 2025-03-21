@@ -82,7 +82,7 @@
     },
     {
       "name": "Raphael Ruschel",
-      "role": "Ph.D. Student",
+      "role": "Ph.D. Candidate",
       "photo": "img/people/raphael.jpg",
       "shortRole": "Ph.D. Candidate",
       "bio": "My research at UCSB has focused on developing transformer-based architectures that model human activities with significantly improved accuracy. I've created dynamic scene-graph generation algorithms that achieved 400%+ recall improvement in real-world scenarios and engineered temporally consistent tracking pipelines that doubled temporal recall on the Action Genome dataset. I've also engineered multi-camera synthetic data generation systems using Unity Engine, featuring parametrized human models with skeletal animations and physics-based interactions. This work has enhanced our ability to train robust models for production environments. Beyond research, I've mentored over 500 students as a Graduate Teaching Assistant in Machine Learning, Computer Vision, and Digital Image Processing courses, earning the Outstanding Teaching Assistant award three times.",
