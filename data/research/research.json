@@ -37,8 +37,8 @@
       {
         "id": "wildlife",
         "title": "Wildlife Conservation",
-        "imageBefore": "img/research/wildlife-before.png",
-        "imageAfter": "img/research/wildlife-after.png",
+        "imageBefore": "img/research/wildlife-before.jpg",
+        "imageAfter": "img/research/wildlife-after.jpg",
         "beforeLabel": "Aerial Image",
         "afterLabel": "Detection Results",
         "description": [
