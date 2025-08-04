@@ -75,7 +75,7 @@ Example research project:
 
 **File:** `data/publications/publications.json`
 
-Publications are organized by year.
+Publications are organized by year and tag. Available tags are in `data/publications/tags.json`. Tags and images are many-to-many.
 
 Example publication entry:
 ```json
@@ -89,7 +89,8 @@ Example publication entry:
       "abstract": "",
       "pdf_link": "#",
       "doi_link": "#",
-      "category": "recent"
+      "category": "recent",
+      "tags": ["tag1", "tag2"]
     }
 ```
 
