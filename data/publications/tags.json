@@ -31,6 +31,10 @@
     {
       "id": "cyberinfrastructure",
       "name": "Cyberinfrastructure"
+    }, 
+    {
+      "id": "cell-analysis",
+      "name": "Cell Analysis"
     }
   ]
 }

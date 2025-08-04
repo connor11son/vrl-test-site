@@ -281,11 +281,12 @@
       "authors": "de Melo Celso, Rothrock Brandon, Gurram Prudhvi, Ulutan Oytun, Manjunath B.S.",
       "year": 2020,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Vision-based gesture recognition in human-robot teams using synthetic data. In Proc. IROS 2020",
+      "abstract": "Building successful collaboration between humans and robots requires efficient, effective, and natural communication. This dataset supports the study of RGB-based deep learning models for controlling robots through gestures (e.g., “follow me”). To address the challenge of collecting high-quality annotated data from human subjects, synthetic data was considered for this domain. This dataset of gestures includes real videos with human subjects and synthetic videos from our custom simulator. This dataset can be used as a benchmark for studying how ML models for activity perception can be improved with synthetic data.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.25349/D9PP5J",
+      "category": "recent",
+      "tags": ["complex-activity"]
     },
     {
       "id": 259,
@@ -294,10 +295,11 @@
       "year": 2020,
       "month": "Jul",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "In the field of computer vision, unsupervised learning for 2D object generation has advanced rapidly in the past few years. However, 3D object generation has not garnered the same attention or success as its predecessor. To facilitate novel progress at the intersection of computer vision and materials science, we propose a 3DMaterialGAN network that is capable of recognizing and synthesizing individual grains whose morphology conforms to a given 3D polycrystalline material microstructure. This Generative Adversarial Network (GAN) architecture yields complex 3D objects from probabilistic latent space vectors with no additional information from 2D rendered images. We show that this method performs comparably or better than state-of-the-art on benchmark annotated 3D datasets, while also being able to distinguish and generate objects that are not easily annotated, such as grain morphologies. The value of our algorithm is demonstrated with analysis on experimental real-world data, namely generating 3D grain structures found in a commercially relevant wrought titanium alloy, which were validated through statistical shape comparison. This framework lays the foundation for the recognition and synthesis of polycrystalline material microstructures, which are used in additive manufacturing, aerospace, and structural design applications. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.48550/arXiv.2007.13887",
+      "category": "recent",
+      "tags": ["materials"]
     },
     {
       "id": 258,
@@ -305,11 +307,12 @@
       "authors": "O. Ulutan, A.S.M. Iftekhar, B.S. Manjunath",
       "year": 2020,
       "month": "Jun",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020",
+      "abstract": "Comprehensive visual understanding requires detection frameworks that can effectively learn and utilize object interactions while analyzing objects individually. This is the main objective in Human-Object Interaction (HOI) detection task. In particular, relative spatial reasoning and structural connections between objects are essential cues for analyzing interactions, which is addressed by the proposed Visual-Spatial-Graph Network (VSGNet) architecture. VSGNet extracts visual features from the human-object pairs, refines the features with spatial configurations of the pair, and utilizes the structural connections between the pair via graph convolutions. The performance of VSGNet is thoroughly evaluated using the Verbs in COCO (V-COCO) dataset. Experimental results indicate that VSGNet outperforms state-of-the-art solutions by 8% or 4 mAP.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.48550/arXiv.2003.05541",
+      "category": "recent",
+      "tags": ["complex-activity"]
     },
     {
       "id": 257,
@@ -317,11 +320,12 @@
       "authors": "Po-Yu Kao, Shailja, Jiaxiang Jiang, Angela Zhang, Amil Khan, Jefferson W Chen, BS Manjunath",
       "year": 2020,
       "month": "Mar",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Front Neurosci. 2020 Apr 15",
+      "abstract": "The manual brain tumor annotation process is time consuming and resource consuming, therefore, an automated and accurate brain tumor segmentation tool is greatly in demand. In this paper, we introduce a novel method to integrate location information with the state-of-the-art patch-based neural networks for brain tumor segmentation. This is motivated by the observation that lesions are not uniformly distributed across different brain parcellation regions and that a locality-sensitive segmentation is likely to obtain better segmentation accuracy. Toward this, we use an existing brain parcellation atlas in the Montreal Neurological Institute (MNI) space and map this atlas to the individual subject data. This mapped atlas in the subject data space is integrated with structural Magnetic Resonance (MR) imaging data, and patch-based neural networks, including 3D U-Net and DeepMedic, are trained to classify the different brain lesions. Multiple state-of-the-art neural networks are trained and integrated with XGBoost fusion in the proposed two-level ensemble method. The first level reduces the uncertainty of the same type of models with different seed initializations, and the second level leverages the advantages of different types of neural network models. The proposed location information fusion method improves the segmentation performance of state-of-the-art networks including 3D U-Net and DeepMedic. Our proposed ensemble also achieves better segmentation performance compared to the state-of-the-art networks in BraTS 2017 and rivals state-of-the-art networks in BraTS 2018. Detailed results are provided on the public multimodal brain tumor segmentation (BraTS) benchmarks. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.3389/fnins.2019.01449",
+      "category": "recent",
+      "tags": ["biomedical"]
     },
     {
       "id": 256,
@@ -329,11 +333,12 @@
       "authors": "Satish Kumar, Carlos Torres, Oytun Ulutan, Alana Ayasse, Dar Roberts, B. S. Manjunath",
       "year": 2020,
       "month": "Mar",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "2020 IEEE Winter Conference on Applications of Computer Vision (WACV)",
+      "abstract": "Effective analysis of hyperspectral imagery is essential for gathering fast and actionable information of large areas affected by atmospheric and green house gases. Existing methods, which process hyperspectral data to detect amorphous gases such as CH4 require manual inspection from domain experts and annotation of massive datasets. These methods do not scale well and are prone to human errors due to the plumes’ small pixel-footprint signature. The proposed Hyperspectral Mask-RCNN (H-mrcnn) uses principled statistics, signal processing, and deep neural networks to address these limitations. H-mrcnn introduces fast algorithms to analyze large-area hyper-spectral information and methods to autonomously represent and detect CH4 plumes. H-mrcnn processes information by match-filtering sliding windows of hyperspectral data across the spectral bands. This process produces information-rich features that are both effective plume representations and gas concentration analogs. The optimized matched-filtering stage processes spectral data, which is spatially sampled to train an ensemble of gas detectors. The ensemble outputs are fused to estimate a natural and accurate plume mask. Thorough evaluation demonstrates that H-mrcnn matches the manual and experience-dependent annotation process of experts by 85% (IOU). H-mrcnn scales to larger datasets, reduces the manual data processing and labeling time (×12), and produces rapid actionable information about gas plumes.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1109/WACV45572.2020.9093600",
+      "category": "recent",
+      "tags": ["geospatial"]
     },
     {
       "id": 255,
@@ -341,11 +346,12 @@
       "authors": "Oytun Ulutan, Swati Rallapalli, Mudhakar Srivatsa, B.S. Manjunath",
       "year": 2020,
       "month": "Jan",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "In The IEEE Winter Conference on Applications of Computer Vision (pp. 527-536) 2020",
+      "abstract": "While observing complex events with multiple actors, humans do not assess each actor separately, but infer from the context. The surrounding context provides essential information for understanding actions. To this end, we propose to replace region of interest(RoI) pooling with an attention module, which ranks each spatio-temporal region's relevance to a detected actor instead of cropping. We refer to these as Actor-Conditioned Attention Maps (ACAM), which amplify/dampen the features extracted from the entire scene. The resulting actor-conditioned features focus the model on regions that are relevant to the conditioned actor. For actor localization, we leverage pre-trained object detectors, which transfer better. The proposed model is efficient and our action detection pipeline achieves near real-time performance. Experimental results on AVA 2.1 and JHMDB demonstrate the effectiveness of attention maps, with improvements of 7 mAP on AVA and 4 mAP on JHMDB. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.48550/arXiv.1812.11631",
+      "category": "recent",
+      "tags": ["complex-activity"]
     },
     {
       "id": 254,
@@ -353,11 +359,12 @@
       "authors": "Po-Yu Kao, Jefferson W. Chen, B.S. Manjunath",
       "year": 2019,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Published in final edited form as: Brainlesion. 2020 May 19",
+      "abstract": "The volume of stroke lesion is the gold standard for predicting the clinical outcome of stroke patients. However, the presence of stroke lesion may cause neural disruptions to other brain regions, and these potentially damaged regions may affect the clinical outcome of stroke patients. In this paper, we introduce the tractographic feature to capture these potentially damaged regions and predict the modified Rankin Scale (mRS), which is a widely used outcome measure in stroke clinical trials. The tractographic feature is built from the stroke lesion and average connectome information from a group of normal subjects. The tractographic feature takes into account different functional regions that may be affected by the stroke, thus complementing the commonly used stroke volume features. The proposed tractographic feature is tested on a public stroke benchmark Ischemic Stroke Lesion Segmentation 2017 and achieves higher accuracy than the stroke volume and the state-of-the-art feature on predicting the mRS grades of stroke patients. Also, the tractographic feature yields a lower average absolute error than the commonly used stroke volume feature.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1007/978-3-030-46640-4_4",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 253,
@@ -365,11 +372,12 @@
       "authors": "Jiaxiang Jiang, Po-Yu Kao, Samuel A. Belteton, Daniel B. Szymanski, B.S. Manjunath",
       "year": 2019,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "2019 IEEE International Conference on Image Processing (ICIP)",
+      "abstract": "We consider the problem of accurately identifying cell boundaries and labeling individual cells in confocal microscopy images, specifically, 3D image stacks of cells with tagged cell membranes. Precise identification of cell boundaries, their shapes, and quantifying inter-cellular space leads to a better understanding of cell morphogenesis. Towards this, we outline a cell segmentation method that uses a deep neural network architecture to extract a confidence map of cell boundaries, followed by a 3D watershed algorithm and a final refinement using a conditional random field. In addition to improving the accuracy of segmentation compared to other state-of-the-art methods, the proposed approach also generalizes well to different datasets without the need to retrain the network for each dataset. Detailed experimental results are provided, and the source code is available on GitHub.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1902.04729",
+      "category": "archive",
+      "tags": ["cell-analysis"]
     },
     {
       "id": 252,
@@ -378,10 +386,11 @@
       "year": 2019,
       "month": "Sep",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "We propose a novel, simple and effective method to integrate lesion prior and a 3D U-Net for improving brain tumor segmentation. First, we utilize the ground-truth brain tumor lesions from a group of patients to generate the heatmaps of different types of lesions. These heatmaps are used to create the volume-of-interest (VOI) map which contains prior information about brain tumor lesions. The VOI map is then integrated with the multimodal MR images and input to a 3D U-Net for segmentation. The proposed method is evaluated on a public benchmark dataset, and the experimental results show that the proposed feature fusion method achieves an improvement over the baseline methods. In addition, our proposed method also achieves a competitive performance compared to state-of-the-art methods. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1907.00281",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 251,
@@ -389,11 +398,12 @@
       "authors": "Po-Yu Kao, Angela Zhang, Michael Goebel, Jefferson W. Chen, B.S. Manjunath",
       "year": 2019,
       "month": "Apr",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": " MICCAI ABCD-NP Challenge 2019",
+      "abstract": "In this work, we utilize T1-weighted MR images and StackNet to predict fluid intelligence in adolescents. Our framework includes feature extraction, feature normalization, feature denoising, feature selection, training a StackNet, and predicting fluid intelligence. The extracted feature is the distribution of different brain tissues in different brain parcellation regions. The proposed StackNet consists of three layers and 11 models. Each layer uses the predictions from all previous layers including the input layer. The proposed StackNet is tested on a public benchmark Adolescent Brain Cognitive Development Neurocognitive Prediction Challenge 2019 and achieves a mean squared error of 82.42 on the combined training and validation set with 10-fold cross-validation. In addition, the proposed StackNet also achieves a mean squared error of 94.25 on the testing data. The source code is available on GitHub. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1904.07387",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 250,
@@ -402,10 +412,11 @@
       "year": 2019,
       "month": "Jan",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "Normal Pressure Hydrocephalus (NPH) is one of the few reversible forms of dementia. Due to their low cost and versatility, Computed Tomography (CT) scans have long been used as an aid to help diagnose intracerebral anomalies such as NPH. However, because CT imaging presents 2-dimensional slices of a 3-dimensional volume, recapitulating the ventricular space in 3-dimensions to facilitate the diagnosis of NPH poses numerous challenges such as head rotation and human error. As such, no well-defined and effective protocol currently exists for the analysis of CT scan-based ventricular, white matter and subarachnoid space volumes in the setting of NPH. The Evan's ratio, an approximation of the ratio of ventricle to brain volume using only one 2D slice of the scan, has been proposed but is not robust. Instead of manually measuring a 2-dimensional proxy for the ratio of ventricle volume to brain volume, this study proposes an automated method of calculating the brain volumes for better recognition of NPH from a radiological standpoint. The method first aligns the subject CT volume to a common space through an affine transformation, then uses a random forest classifier to mask relevant tissue types. A 3D morphological segmentation method is used to partition the brain volume, which in turn is used to train machine learning methods to classify the subjects into non-NPH vs. NPH based on volumetric information.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "http://dx.doi.org/10.48550/arXiv.1901.09088",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 249,
@@ -413,11 +424,12 @@
       "authors": "Po-Yu Kao, Thuyen Ngo, Angela Zhang, Jefferson W. Chen, B.S. Manjunath",
       "year": 2018,
       "month": "Nov",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "4th International Workshop, BrainLes 2018, Held in Conjunction with MICCAI 2018",
+      "abstract": "This paper introduces a novel methodology to integrate human brain connectomics and parcellation for brain tumor segmentation and survival prediction. For segmentation, we utilize an existing brain parcellation atlas in the MNI152 1mm space and map this parcellation to each individual subject data. We use deep neural network architectures together with hard negative mining to achieve the final voxel level classification. For survival prediction, we present a new method for combining features from connectomics data, brain parcellation information, and the brain tumor mask. We leverage the average connectome information from the Human Connectome Project and map each subject brain volume onto this common connectome space. From this, we compute tractographic features that describe potential neural disruptions due to the brain tumor. These features are then used to predict the overall survival of the subjects. The main novelty in the proposed methods is the use of normalized brain parcellation data and tractography data from the human connectome project for analyzing MR images for segmentation and survival prediction. Experimental results are reported on the BraTS2018 dataset. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1807.07716",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 248,
@@ -425,11 +437,12 @@
       "authors": "C. Torres, J. C. Fried, K. Rose and B. S. Manjunath",
       "year": 2018,
       "month": "May",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": " IEEE Transactions on Multimedia ( Volume: 20, Issue: 11, November 2018)",
+      "abstract": "Clinical observations indicate that during critical care at the hospitals, a patient's sleep positioning and motion have a significant effect on recovery rate. Unfortunately, there is no formal medical protocol to record, quantify, and analyze motion of patients. There are very few clinical studies that use manual analysis of sleep poses and motion recordings to support medical benefits of patient positioning and motion monitoring. Manual processes do not scale, are prone to human errors, and put strain on an already taxed healthcare workforce. This study introduces multimodal, multiview motion analysis and summarization for healthcare (MASH). MASH is an autonomous system, which addresses these issues by monitoring healthcare environments and enabling the recording and analysis of patient sleep-pose patterns. MASH uses three RGB-D cameras to monitor patients in a medical intensive care unit (ICU) room. The proposed algorithms estimate pose direction at different temporal resolutions and use keyframes to efficiently represent pose transition dynamics. MASH combines deep features computed from the data with a modified version of hidden Markov model (HMM) to flexibly model pose duration and summarize patient motion. The performance is evaluated in ideal (BC: bright and clear/occlusion-free) and natural (DO: dark and occluded) scenarios at two motion resolutions and in two environments: a mock-up and a medical ICU. The usage of deep features is evaluated and their performance compared with engineered features. Experimental results using deep features in DO scenes increase performance from 86.7% to 93.6%, while matching the classification performance of engineered features in BC scenes. The performance of MASH is compared with HMM and C3D. The overall overtime tracing and summarization error rate across all methods increased when transitioning from the mock-up to the the medical ICU data. The proposed keyframe estimation helps achieve a 78% transition classification accuracy.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/TMM.2018.2829162",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 247,
@@ -437,23 +450,25 @@
       "authors": "Hang Qiu, Xiaochen Liu, Swati Rallapalli, Archith J. Bency, Rahul Urgaonkar, B.S. Manjunath, Ramesh Govindan, Kevin Chan",
       "year": 2018,
       "month": "Apr",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation",
+      "abstract": "In the future, the video-enabled camera will be the most pervasive type of sensor in the Internet of Things. Such cameras will enable continuous surveillance through heterogeneous camera networks consisting of fixed camera systems as well as cameras on mobile devices. The challenge in these networks is to enable efficient video analytics: the ability to process videos cheaply and quickly to enable searching for specific events or sequences of events. In this paper, we discuss the design and implementation of Kestrel, a video analytics system that tracks the path of vehicles across a heterogeneous camera network. In Kestrel, fixed camera feeds are processed on the cloud, and mobile devices are invoked only to resolve ambiguities in vehicle tracks. Kestrel's mobile device pipeline detects objects using a deep neural network, extracts attributes using cheap visual features, and resolves path ambiguities by careful association of vehicle visual descriptors, while using several optimizations to conserve energy and reduce latency. Our evaluations show that Kestrel can achieve precision and recall comparable to a fixed camera network of the same size and topology, while reducing energy usage on mobile devices by more than an order of magnitude.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/IoTDI.2018.00015",
+      "category": "archive",
+      "tags": ["complex-activity", "computer-vision"]
     },
     {
       "id": 246,
-      "title": "A Bilinear Model for Person Detection in Multi-Modal Data",
+      "title": "An Order Preserving Bilinear Model for Person Detection in Multi-Modal Data",
       "authors": "Oytun Ulutan, Benjamin Riggan, Nasser Nasrabadi, B.S. Manjunath",
       "year": 2018,
-      "month": "Mar",
+      "month": "Jan",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "We propose a new order preserving bilinear framework that exploits low-resolution video for person detection in a multi-modal setting using deep neural networks. In this setting cameras are strategically placed such that less robust sensors, e.g. geophones that monitor seismic activity, are located within the field of views (FOVs) of cameras. The primary challenge is being able to leverage sufficient information from videos where there are less than 40 pixels on targets, while also taking advantage of less discriminative information from other modalities, e.g. seismic. Unlike state-of-the-art methods, our bilinear framework retains spatio-temporal order when computing the vector outer products between pairs of features. Despite the high dimensionality of these outer products, we demonstrate that our order preserving bilinear framework yields better performance than recent orderless bilinear models and alternative fusion methods.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1712.07721",
+      "category": "archive",
+      "tags": ["complex-activity", "computer-vision"]
     },
     {
       "id": 245,
@@ -461,23 +476,25 @@
       "authors": "Thuyen Ngo, B.S. Manjunath",
       "year": 2017,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "2017 IEEE International Conference on Image Processing (ICIP)",
+      "abstract": "We present a model that generates close-to-human gaze sequences for a given image in the free viewing task. The proposed approach leverages recent advances in image recognition using convolutional neural networks and sequence modeling with recurrent neural networks. Feature maps from convolutional neural networks are used as inputs to a recurrent neural network. The recurrent neural network acts like a visual working memory that integrates the scene information and outputs a sequence of saccades. The model is trained end-to-end with real-world human eye-tracking data using back propagation and adaptive stochastic gradient descent. Overall, the proposed model is simple compared to the state-of-the-art methods while offering favorable performance on a standard eye-tracking data set.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/ICIP.2017.8296920",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 244,
       "title": "Scalable Image Informatics",
       "authors": "Dmitry Fedorov, B.S. Manjunath, Christian Lang, Kristiam Kvilekval",
       "year": 2017,
-      "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "month": "Dec",
+      "publication_venue": "Image and Video Processing and Analysis and Computer Vision",
+      "abstract": "Images and video play a major role in scientific discoveries. Significant new advances in imaging science over the past two decades have resulted in new devices and technologies that are able to probe the world at nanoscales to planetary scales. These instruments generate massive amounts of multimodal imaging data. In addition to the raw imaging data, these instruments capture additional critical information—the metadata—that include the imaging context. Further, the experimental conditions are often added manually to such metadata that describe processes that are not implicit in the instrumentation metadata. Despite these technological advances in imaging sciences, resources for curation, distribution, sharing, and analysis of such data at scale are still lacking. Robust image analysis workflows have the potential to transform image-based sciences such as biology, ecology, remote sensing, materials science, and medical imaging. In this context, this chapter presents BisQue, a novel eco-system where scientific image analysis methods can be discovered, tested, verified, refined, and shared among users on a shared, cloud-based infrastructure. The vision of BisQue is to enable large-scale, data-driven scientific explorations. The following sections will discuss the core requirements of such an architecture, challenges in developing and deploying the methods, and will conclude with an application to image recognition using deep learning.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1016/B978-0-12-811889-4.00009-9",
+      "category": "archive",
+      "tags": ["cyberinfrastructure"]
     },
     {
       "id": 243,
@@ -485,11 +502,12 @@
       "authors": "Carlos Torres, Archith J. Bency, Jeffrey C. Fried, B. S. Manjunath",
       "year": 2017,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "ICDSC 2017: Proceedings of the 11th International Conference on Distributed Smart Cameras",
+      "abstract": "This work introduces a multimodal multiview camera network for role identification and re-identification in an Intensive Care Unit (ICU) room, where identifying individuals is not permitted. The analysis challenges include imaging conditions such as medical isolation (where all visitors wear scrubs), poor and non-uniform illumination, or variable camera views. We propose a role representation, which combines static appearance features such as texture and color, together with a dynamic quantification of human locations and interactions that results in a semantic map. The proposed representation is easy to compute and robust to varying ICU conditions and network configurations, which make the methods suitable for low-power distributed sensor network deployment. Thorough evaluations and comparisons with competing methods are performed. The findings from this approach enable the compliant analysis of workflows in healthcare, while protecting the privacy of patients and medical staff.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1145/3131885.3131928",
+      "category": "archive",
+      "tags": ["complex-activity"]
     },
     {
       "id": 242,
@@ -498,10 +516,11 @@
       "year": 2017,
       "month": "Aug",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "Humans use context and scene knowledge to easily localize moving objects in conditions of complex illumination changes, scene clutter and occlusions. In this paper, we present a method to leverage human knowledge in the form of annotated video libraries in a novel search and retrieval based setting to track objects in unseen video sequences. For every video sequence, a document that represents motion information is generated. Documents of the unseen video are queried against the library at multiple scales to find videos with similar motion characteristics. This provides us with coarse localization of objects in the unseen video. We further adapt these retrieved object locations to the new video using an efficient warping scheme. The proposed method is validated on in-the-wild video surveillance datasets where we outperform state-of-the-art appearance-based trackers. We also introduce a new challenging dataset with complex object appearance changes. ",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1602.01890",
+      "category": "archive",
+      "tags": ["complex-activity"]
     },
     {
       "id": 241,
@@ -510,10 +529,11 @@
       "year": 2017,
       "month": "Jul",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "Resampling is an important signature of manipulated images. In this paper, we propose two methods to detect and localize image manipulations based on a combination of resampling features and deep learning. In the first method, the Radon transform of resampling features are computed on overlapping image patches. Deep learning classifiers and a Gaussian conditional random field model are then used to create a heatmap. Tampered regions are located using a Random Walker segmentation method. In the second method, resampling features computed on overlapping image patches are passed through a Long short-term memory (LSTM) based network for classification and localization. We compare the performance of detection/localization of both these methods. Our experimental results show that both techniques are effective in detecting and localizing digital image forgeries.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1707.00433",
+      "category": "archive",
+      "tags": ["cyberinfrastructure"]
     },
     {
       "id": 240,
