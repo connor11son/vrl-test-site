@@ -200,7 +200,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="publication">
                                 <h3>${pub.title}</h3>
                                 <p class="publication-meta">${pub.authors} ${pub.month ? `| ${pub.month}` : ''} ${pub.publication_venue ? `| ${pub.publication_venue}` : ''}</p>
-                                <p>${pub.abstract || ''}</p>
+                                ${pub.abstract ? `
+                                    <div class="abstract-section">
+                                        <button class="abstract-toggle" onclick="toggleAbstract(this)">Show Abstract</button>
+                                        <p class="abstract-text" style="display: none;">${pub.abstract}</p>
+                                    </div>
+                                ` : ''}
                                 <div class="publication-links">
                                     ${pub.pdf_link ? `<a href="${pub.pdf_link}">PDF</a>` : ''}
                                     ${pub.doi_link ? `<a href="${pub.doi_link}">DOI</a>` : ''}
@@ -259,3 +264,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     initializePage();
 });
+
+function toggleAbstract(button) {
+    const abstractText = button.nextElementSibling;
+    const isHidden = abstractText.style.display === 'none';
+    
+    if (isHidden) {
+        abstractText.style.display = 'block';
+        button.textContent = 'Hide Abstract';
+    } else {
+        abstractText.style.display = 'none';
+        button.textContent = 'Show Abstract';
+    }
+}

@@ -260,6 +260,34 @@
     height: 24px;
 }
 
+/* Abstract toggle styling */
+.abstract-section {
+    margin: 15px 0;
+}
+
+.abstract-toggle {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.abstract-toggle:hover {
+    background-color: #007d71;
+}
+
+.abstract-text {
+    margin: 10px 0 0 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .filter-controls {
