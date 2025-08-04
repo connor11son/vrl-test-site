@@ -64,8 +64,6 @@ function displayResearchProjects(projects, container) {
             <div class="research-image">
                 <div class="research-image-before" style="background-image: url('${project.imageBefore}')"></div>
                 <div class="research-image-after" style="background-image: url('${project.imageAfter}')"></div>
-                <div class="image-label before-label">${project.beforeLabel}</div>
-                <div class="image-label after-label">${project.afterLabel}</div>
             </div>
             <div class="research-content">
                 <h3>${project.title}</h3>
