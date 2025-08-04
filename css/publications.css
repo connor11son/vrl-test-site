@@ -46,6 +46,17 @@
     font-size: 0.9rem;
 }
 
+.filter-controls .btn-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.filter-controls .btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
 /* Publication cards */
 .publication {
     background-color: white;

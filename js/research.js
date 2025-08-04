@@ -48,6 +48,17 @@ function displayResearchProjects(projects, container) {
         // Determine if this is an even-indexed project for alternating layout
         const isEven = index % 2 !== 0;
         
+        // Map project IDs to publication tags
+        const tagMapping = {
+            'complex-activity': 'complex-activity',
+            'biomedical': 'biomedical',
+            'materials': 'materials',
+            'wildlife': 'wildlife',
+            'geospatial': 'geospatial'
+        };
+        
+        const publicationTag = tagMapping[project.id] || project.id;
+        
         // Create HTML for the project
         projectElement.innerHTML = `
             <div class="research-image">
@@ -59,6 +70,7 @@ function displayResearchProjects(projects, container) {
             <div class="research-content">
                 <h3>${project.title}</h3>
                 ${project.description.map(paragraph => `<p>${paragraph}</p>`).join('')}
+                <a href="publications.html?tag=${publicationTag}" class="btn" style="margin-top: 15px;">Publications</a>
             </div>
         `;
         

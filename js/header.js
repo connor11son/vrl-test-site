@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Set active nav link based on current page
                 const currentPage = window.location.pathname.split('/').pop();
-                if (currentPage === 'bisque.html') {
-                    document.getElementById('bisque-link')?.classList.add('active');
-                } else if (currentPage === 'people.html') {
+                if (currentPage === 'people.html') {
                     document.getElementById('people-link')?.classList.add('active');
                 } else if (currentPage === 'publications.html') {
                     document.getElementById('publications-link')?.classList.add('active');

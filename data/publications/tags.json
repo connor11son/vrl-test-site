@@ -1,0 +1,24 @@
+{
+  "tags": [
+    {
+      "id": "complex-activity",
+      "name": "Complex Activity Detection"
+    },
+    {
+      "id": "biomedical", 
+      "name": "Biomedical Image Analysis"
+    },
+    {
+      "id": "materials",
+      "name": "Materials Science"
+    },
+    {
+      "id": "wildlife",
+      "name": "Wildlife Conservation"
+    },
+    {
+      "id": "geospatial",
+      "name": "Geospatial Data Analysis"
+    }
+  ]
+}

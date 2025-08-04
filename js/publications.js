@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Elements
     const yearFilter = document.getElementById('year-filter');
+    const tagFilter = document.getElementById('tag-filter');
     // Temporarily disabled categoryFilter
     // const categoryFilter = document.getElementById('category-filter');
     const applyFiltersBtn = document.getElementById('apply-filters');
@@ -59,6 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     return false;
                 }
                 
+                // Apply tag filter (for research area filtering)
+                if (filters.tag) {
+                    // If a specific tag is selected, only show publications with that tag
+                    if (!pub.tags || !pub.tags.includes(filters.tag)) {
+                        return false;
+                    }
+                }
+                // If "All Research Areas" is selected, show all publications (no filtering by tags)
+                
                 // Category filtering temporarily disabled
                 // Apply category filter
                 // if (filters.category && pub.category !== filters.category) {
@@ -83,6 +93,34 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>Error details: ${error.message}</p>
                 </div>
             `;
+        }
+    }
+    
+    // Populate tag filter with available tags from JSON
+    async function populateTagFilter() {
+        try {
+            const response = await fetch('data/publications/tags.json');
+            if (!response.ok) {
+                throw new Error('Failed to load tags');
+            }
+            
+            const data = await response.json();
+            const tags = data.tags || [];
+            
+            // Clear existing options except the first one
+            while (tagFilter.options.length > 1) {
+                tagFilter.remove(1);
+            }
+            
+            // Add options for each tag
+            tags.forEach(tag => {
+                const option = document.createElement('option');
+                option.value = tag.id;
+                option.textContent = tag.name;
+                tagFilter.appendChild(option);
+            });
+        } catch (error) {
+            console.error('Error loading tags:', error);
         }
     }
     
@@ -180,6 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
     applyFiltersBtn.addEventListener('click', function() {
         const filters = {
             year: yearFilter.value,
+            tag: tagFilter.value,
             // Category filtering temporarily disabled
             // category: categoryFilter.value
         };
@@ -189,11 +228,34 @@ document.addEventListener('DOMContentLoaded', function() {
     
     resetFiltersBtn.addEventListener('click', function() {
         yearFilter.value = '';
+        tagFilter.value = '';
         // Category filtering temporarily disabled
         // categoryFilter.value = '';
+        
         fetchPublications();
     });
     
-    // Initial load
-    fetchPublications();
+    // Check for URL parameters
+    function getUrlParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+    
+    // Initial load - populate tag filter and check for tag parameter
+    async function initializePage() {
+        await populateTagFilter();
+        
+        const tagFromUrl = getUrlParameter('tag');
+        if (tagFromUrl && tagFilter) {
+            // Set the tag filter dropdown to match URL parameter
+            tagFilter.value = tagFromUrl;
+            // If there's a tag parameter, we'll filter by that tag
+            const initialFilters = { tag: tagFromUrl };
+            fetchPublications(initialFilters);
+        } else {
+            fetchPublications();
+        }
+    }
+    
+    initializePage();
 });
