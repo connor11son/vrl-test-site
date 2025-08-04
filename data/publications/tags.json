@@ -13,12 +13,24 @@
       "name": "Materials Science"
     },
     {
-      "id": "wildlife",
-      "name": "Wildlife Conservation"
+      "id": "biodiversity",
+      "name": "Biodiversity"
     },
     {
       "id": "geospatial",
       "name": "Geospatial Data Analysis"
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision"
+    },
+    {
+      "id": "malware",
+      "name": "Malware Analysis"
+    },
+    {
+      "id": "cyberinfrastructure",
+      "name": "Cyberinfrastructure"
     }
   ]
 }
