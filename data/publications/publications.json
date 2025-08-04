@@ -29,7 +29,7 @@
       "authors": "Bowen Zhang, S Shailja, Chandrakanth Gudavalli, Connor Levenson, Amil Khan, B S. Manjunath",
       "year": 2024,
       "month": "Dec",
-      "publication_venue": "International Conference on Pattern Recognition",
+      "publication_venue": "International Conference on Pattern Recognition (ICPR 2024)",
       "abstract": "",
       "pdf_link": "#",
       "doi_link": "#",
@@ -521,11 +521,12 @@
       "authors": "Archith J. Bency, Swati Rallapalli, Raghu K. Ganti, Mudhakar Srivatsa, and B. S. Manjunath",
       "year": 2017,
       "month": "Mar",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE Winter Conference on Applications of Computer Vision (WACV)",
+      "abstract": "When modeling geo-spatial data, it is critical to capture spatial correlations for achieving high accuracy. Spatial Auto-Regression (SAR) is a common tool used to model such data, where the spatial contiguity matrix (W) encodes thespatial correlations. However, the efficacy of SAR is limited by two factors. First, it depends on the choice of contiguity matrix, which is typically not learnt from data, but instead, is assumed to be known apriori. Second, it assumes that the observations can be explained by linear models. In this paper, we propose a Convolutional Neural Network (CNN) framework to model geo-spatial data (specifically housing prices), to learn the spatial correlations automatically. We show that neighborhood information embedded in satellite imagery can be leveraged to achieve the desired spatial smoothing. An additional upside of our framework is the relaxation of linear assumption on the data. Specific challenges we tackle while implementing our framework include, (i) how much of the neighborhood is relevant while estimating housing prices? (ii) what is the right approach to capture multiple resolutions of satellite imagery? and (iii) what other data-sources can help improve the estimation of spatial correlations? We demonstrate a marked improvement of 57% on top of the SAR baseline through the use of features from deep neural networks for the cities of London, Birmingham and Liverpool.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/WACV.2017.42",
+      "category": "archive",
+      "tags": ["geospatial"]
     },
     {
       "id": 239,
@@ -534,10 +535,11 @@
       "year": 2017,
       "month": "Mar",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "BisQue is a cloud-based system for management, annotation, visualization, analysis and data mining of complex multi-dimensional underwater and remote sensing imagery and associated data. It is designed to hide the complexity of distributed storage, large computational clusters, diversity of data formats and heterogeneous computational environments behind a user friendly web-based interface. BisQue is built around an idea of flexible and hierarchical annotations defined by the user. Such textual and graphical annotations can describe captured attributes and the relationships between data elements. Annotations are powerful enough to describe cells in fluorescent 4D images, fish species in underwater videos and kelp beds in aerial imagery.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://escholarship.org/uc/item/9z73t7hv",
+      "category": "archive",
+      "tags": ["cyberinfrastructure"]
     },
     {
       "id": 238,
@@ -545,11 +547,12 @@
       "authors": "Carlos Torres, Jeffrey C. Fried, Kenneth Rose, B. S. Manjunath",
       "year": 2016,
       "month": "Oct",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "European Conference on Computer Vision (ECCV)",
+      "abstract": "Healthcare professionals speculate about the effects of poses and pose manipulation in healthcare. Anecdotal observations indicate that patient poses and motion affect recovery. Motion analysis using human observers puts strain on already taxed healthcare workforce requiring staff to record motion. Automated algorithms and systems are unable to monitor patients in hospital environments without disrupting patients or the existing standards of care. This work introduces the DECU framework, which tackles the problem of autonomous unobtrusive monitoring of patient motion in an Intensive Care Unit (ICU). DECU combines multimodal emissions from Hidden Markov Models (HMMs), key frame extraction from multiple sources, and deep features from multimodal multiview data to monitor patient motion. Performance is evaluated in ideal and non-ideal scenarios at two motion resolutions in both a mock-up and a real ICU.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "http://dx.doi.org/10.1007/978-3-319-48881-3_13",
+      "category": "archive",
+      "tags": ["biomedical", "computer-vision"]
     },
     {
       "id": 237,
@@ -557,11 +560,12 @@
       "authors": "Po-Yu Kao, Eduardo Rojas, Jefferson W. Chen, Angela Zhang, B. S. Manjunath",
       "year": 2016,
       "month": "Oct",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "International Workshop on Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries",
+      "abstract": "We present an unsupervised three-dimensional feature clustering algorithm to gather the mTOP2016 challenge data into 3 groups. We use the brain MR-T1, diffusion tensor fractional anisotropy, and diffusion tensor mean diffusivity images provided by the mTOP2016 competition. A distance-based size constraint method for data clustering is used. The proposed approach achieves 0.267 adjusted rand index and 0.3556 homogeneity score within the 15 labeled subjects, corresponding to 10 correctly classified data items. Based on visual exploration of the data, we believe that a localized analysis of the lesion regions, using the computed tractography data, is a promising direction to pursue.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1007/978-3-319-55524-9_26",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 236,
@@ -569,11 +573,12 @@
       "authors": "Archith J Bency, Heesung Kwon, H Lee, S Karthikeyan, B.S. Manjunath",
       "year": 2016,
       "month": "Oct",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "ECCV",
+      "abstract": "Object localization is an important computer vision problem with a variety of applications. The lack of large scale object-level annotations and the relative abundance of image-level labels makes a compelling case for weak supervision in the object localization task. Deep Convolutional Neural Networks are a class of state-of-the-art methods for the related problem of object recognition. In this paper, we describe a novel object localization algorithm which uses classification networks trained on only image labels. This weakly supervised method leverages local spatial and semantic patterns captured in the convolutional layers of classification networks. We propose an efficient beam search based approach to detect and localize multiple objects in images. The proposed method significantly outperforms the state-of-the-art in standard object localization data-sets with a 8 point increase in mAP scores.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.48550/arXiv.1603.00489",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 235,
@@ -581,11 +586,12 @@
       "authors": "Justin Preece, Justin Elser, Pankaj Jaiswal, Kristian Kvilekval, Dmitry Fedorov, B. S. Manjunath, Ryan Kitchen, Xu Xu, Dmitrios Trigkakis, Sinisa Todorovic, Seth Carbon",
       "year": 2016,
       "month": "Aug",
-      "publication_venue": "",
+      "publication_venue": "CEUR Workshop Proceedings",
       "abstract": "",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://escholarship.org/uc/item/2xm742zt",
+      "category": "archive",
+      "tags": ["cyberinfrastructure"]
     },
     {
       "id": 234,
@@ -593,11 +599,12 @@
       "authors": "Amir M Rahimi, R Ruschel, BS Manjunath",
       "year": 2016,
       "month": "Jun",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "abstract": "We present a real-time body orientation estimation in a micro-Unmanned Air Vehicle video stream. This work is part ofafully autonomous UAVsystem which can maneuver to face a single individual in challenging outdoor environments. Our body orientation estimation consists of the following steps: (a) obtaining a set ofvisual appearance models for each body orientation, where each model is tagged with a set of scene information (obtained from sensors), (b) exploiting the mutual information of on-board sensors using latent-dynamic conditional random fields (WCRF), (c) Characterizing each visual appearance model with the most discriminative sensor information, (d) fast estimation ofbody orientation during the test flights given theWCRF parameters and the corresponding sensor readings. The key aspects of our approach is to add sparsity to the sensor readings with latent variables followed by long range dependency analysis. Experimental results obtained over real-time video streams demonstrate a significant improvement in both speed (l5-fps) and accuracy (72%) compared to the state of the art techniques that only rely on visual data. Video demonstration ofour autonomous flights (both from ground view and aerial view) are included in the supplementary material.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/CVPR.2016.490",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 233,
@@ -605,11 +612,12 @@
       "authors": "Lakshmanan Nataraj, B.S. Manjunath",
       "year": 2016,
       "month": "Mar",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "International Conference on Internet and Web Applications and Services",
+      "abstract": "In this article, we explored orthogonal methods to analyze malware motivated by signal and image processing. Malware samples are represented as images or signals. Image and signal-based features are extracted to characterize malware. Our extensive experiments demonstrate the efficacy of our methods on malware classification and retrieval. We believe that our techniques will open the scope of signal-and image-based methods to broader fields in computer security.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/MSP.2015.2507185",
+      "category": "archive",
+      "tags": ["malware"]
     },
     {
       "id": 232,
@@ -618,10 +626,11 @@
       "year": 2016,
       "month": "Feb",
       "publication_venue": "",
-      "abstract": "",
+      "abstract": "Logistical and financial limitations of underwater operations are inherent in marine science, including biodiversity observation. Imagery is a promising way to address these challenges, but the diversity of organisms thwarts simple automated analysis. Recent developments in computer vision methods, such as convolutional neural networks (CNN), are promising for automated classification and detection tasks but are typically very computationally expensive and require extensive training on large datasets. Therefore, managing and connecting distributed computation, large storage and human annotations of diverse marine datasets is crucial for effective application of these methods. BisQue is a cloud-based system for management, annotation, visualization, analysis and data mining of underwater and remote sensing imagery and associated data. Designed to hide the complexity of distributed storage, large computational clusters, diversity of data formats and inhomogeneous computational environments behind a user friendly web-based interface, BisQue is built around an idea of flexible and hierarchical annotations defined by the user. Such textual and graphical annotations can describe captured attributes and the relationships between data elements. Annotations are powerful enough to describe cells in fluorescent 4D images, fish species in underwater videos and kelp beds in aerial imagery. Presently we are developing BisQue-based analysis modules for automated identification of benthic marine organisms. Recent experiments with drop-out and CNN based classification of several thousand annotated underwater images demonstrated an overall accuracy above 70% for the 15 best performing species and above 85% for the top 5 species. Based on these promising results, we have extended bisque with a CNN-based classification system allowing continuous training on user-provided data.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://escholarship.org/content/qt0315h984/qt0315h984_noSplash_d82b7d6be2bcbf828f0a9d2fb230d32d.pdf?t=owv2ss",
+      "category": "archive",
+      "tags": ["cyberinfrastructure", "biodiversity"]
     },
     {
       "id": 231,
@@ -629,11 +638,12 @@
       "authors": "S. Sunderrajan and B. S. Manjunath",
       "year": 2016,
       "month": "Jan",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "abstract": "Tracking and re-identification in wide-area camera networks is a challenging problem due to non-overlapping visual fields, varying imaging conditions, and appearance changes. We consider the problem of person re-identification and tracking, and propose a novel clothing context-aware color extraction method that is robust to such changes. Annotated samples are used to learn color drift patterns in a non-parametric manner using the random forest distance (RFD) function. The color drift patterns are automatically transferred to associate objects across different views using a unified graph matching framework . A hypergraph representation is used to link related objects for search and re-identification. A diverse hypergraph ranking technique is proposed for person-focused network summarization . The proposed algorithm is validated on a wide-area camera network consisting of ten cameras on bike paths. Also, the proposed algorithm is compared with the state of the art person re-identification algorithms on the VIPeR dataset .",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/TMM.2015.2496139",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 230,
@@ -641,11 +651,12 @@
       "authors": "Raghu Ganti, Mudhakar Srivatsa, B.S. Manjunath",
       "year": 2016,
       "month": "Jan",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Proceedings of the 17th International Conference on Distributed Computing and Networkin",
+      "abstract": "Location traces are becoming fairly abundant with the introduction of various mobile devices such as smartphones, in-car navigation units, and video cameras. Each individual type of device generates different features about a mobile entity along with the location of that entity itself. For example, the smartphone can provide the motion (using accelerometer) of an individual, whereas a video camera can identify what type of clothing the person is wearing. A key challenge is to be able to fuse the data across different data sources and generate a unique view for each entity. This paper tackles a slice of this larger problem, which is to reconcile entities across a multi-camera network and a GPS trace from a smartphone and proposes a novel algorithm that can scale horizontally to adapt to new age distributed systems such as Apache Spark and IBM's InfoSphere Streams. We show through extensive experiments on a real-world dataset that our algorithm outperforms existing approaches and adapts to horizontally scalable distributed environments.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1145/2833312.2849566",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 229,
@@ -653,11 +664,12 @@
       "authors": "Lakshmanan Nataraj",
       "year": 2015,
       "month": "Dec",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "PhD Thesis",
+      "abstract": "There is an alarming increase in the amount of malware that is generated today. Several studies have shown that most of these new malware are just variants of existing ones. In this research we focus on developing orthogonal methods motivated by Signal and Image Processing. We exploit the fact that most malware variants are similar in structure. One could then treat malware as digital signals and apply Signal and Image Processing techniques to compute descriptions that facilitate detection and classification of malware. First, we will present SARVAM: Search And RetrieVAl of Malware, an online malware search and retrieval system where one can upload a binary executable and search over a database of approximately 7 million malware samples using Image Similarity metrics. Next, we generalize this approach by expanding malware as a sparse linear combination of other malware samples. Finally, the methods can be generalized to data forensics, where given a block of data we can determine the data type.",
       "pdf_link": "#",
       "doi_link": "#",
-      "category": "archive"
+      "category": "archive",
+      "tags": ["malware"]
     },
     {
       "id": 228,
@@ -665,11 +677,12 @@
       "authors": "A. M. Rahimi, L. Nataraj, B.S. Manjunath",
       "year": 2015,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE International Conference on Image Processing",
+      "abstract": "We investigate the problem of image classification within a supervised learning framework that exploits implicit mutual information in different visual features and their associated classifiers. In our proposed two stage hierarchical processing, visual features are first clustered with the objective of maximizing diversity. Majority vote within each cluster is used to enforce diversity. Many partitioning variations are evaluated using K-nearest neighbor to obtain the highest inter-cluster entropy. In the second step, a richer measure of discrimination is obtained using a fully connected conditional random fields (CRF) over clusters. The unary and interaction potentials are defined over mutual information within each cluster and inter-dependencies across clusters respectively. Experimenting over five distinct datasets, we demonstrate an average performance gain of 30% compared with state of the art techniques.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/ICIP.2015.7351450",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 227,
@@ -677,11 +690,12 @@
       "authors": "Niloufar Pourian, S. Karthikeyan, B.S. Manjunath",
       "year": 2015,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE International Conference on Image Processing (ICIP)",
+      "abstract": "We present a novel framework for querying multi-modal data from a heterogeneous database containing images, textual tags, and GPS coordinates. We construct a bi-layer graph structure using localized image-parts and associated GPS locations and textual tags from the database. The first layer graphs capture similar data points from a single modality using a spectral clustering algorithm. The second layer of our multi-modal network allows one to integrate the relationships between clusters of different modalities. The proposed network model enables us to use flexible multi-modal queries on the database.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/ICIP.2015.7458705",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 226,
@@ -689,11 +703,12 @@
       "authors": "Lakshmanan Nataraj, S Karthikeyan, B.S. Manjunath",
       "year": 2015,
       "month": "Jun",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Proceedings of the 3rd ACM Workshop on Information Hiding and Multimedia Security",
+      "abstract": "There is an alarming increase in the amount of malware that is generated today. However, several studies have shown that most of these new malware are just variants of existing ones. Fast detection of these variants plays an effective role in thwarting new attacks. In this paper, we propose a novel approach to detect malware variants using a sparse representation framework. Exploiting the fact that most malware variants have small differences in their structure, we model a new/unknown malware sample as a sparse linear combination of other malware in the training set.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1145/2756601.2756616",
+      "category": "archive",
+      "tags": ["malware"]
     },
     {
       "id": 225,
@@ -701,11 +716,12 @@
       "authors": "Carlos Torres, Scott D. Hammond, Jeffrey C. Fried, B. S. Manjunath",
       "year": 2015,
       "month": "Jun",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "International Conference on Computer Vision Systems",
+      "abstract": "Clinical evidence suggests that sleep pose analysis can shed light onto patient recovery rates and responses to therapies. In this work, we introduce a formulation that combines features from multimodal data to classify human sleep poses in an Intensive Care Unit (ICU) environment. As opposed to the current methods that combine data from multiple sensors to generate a single feature, we extract features independently. We then use these features to estimate candidate labels and infer a pose. Our method uses modality trusts – each modality’s classification ability – to handle variable scene conditions and to deal with sensor malfunctions. Specifically, we exploit shape and appearance features extracted from three sensor modalities: RGB, depth, and pressure. Classification results indicate that our method achieves 100 % accuracy (outperforming previous techniques by 6 %) in bright and clear (ideal) scenes, 70 % in poorly illuminated scenes, and 90 % in occluded ones.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1007/978-3-319-20904-3_6",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 224,
@@ -713,11 +729,12 @@
       "authors": "S. Karthikeyan, Thuyen Ngo, Miguel Eckstein and B.S. Manjunath",
       "year": 2015,
       "month": "Jun",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "abstract": "Visual attention is a crucial indicator of the relative importance of objects in visual scenes to human viewers. In this paper, we propose an algorithm to extract objects which attract visual attention from videos. As human attention is naturally biased towards high level semantic objects in visual scenes, this information can be valuable to extract salient objects. The proposed algorithm extracts dominant visual tracks using eye tracking data from multiple subjects on a video sequence by a combination of mean-shift clustering and Hungarian algorithm. These visual tracks guide a generic object search algorithm to get candidate object locations and extents in every frame. Further, we propose a novel multiple object extraction algorithm by constructing a spatio-temporal mixed graph over object candidates. Bounding box based object extraction inference is performed using binary linear integer programming on a cost function defined over the graph. Finally, the object boundaries are refined using grabcut segmentation. The proposed technique outperforms state-of-the-art video segmentation using eye tracking prior and obtains favorable object extraction over algorithms which do not utilize eye tracking data.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/CVPR.2015.7298944",
+      "category": "archive",
+      "tags": ["computer-vision", "biomedical"]
     },
     {
       "id": 223,
@@ -725,23 +742,25 @@
       "authors": "Ninad S Thakoor, Le An, Bir Bhanu, Santhoshkumar Sunderrajan, B.S. Manjunath",
       "year": 2015,
       "month": "Mar",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Computer (Volume: 48, Issue: 3)",
+      "abstract": "Camera networks provide opportunities for practical video surveillance and monitoring, but tracking people across the network presents many computational and modeling hurdles that researchers have yet to surmount.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/WACV.2015.133",
+      "category": "archive",
+      "tags": ["complex-activity", "computer-vision"]
     },
     {
       "id": 222,
       "title": "Characterizing spatial distributions of astrocytes in the mammalian retina",
-      "authors": "Aruna Jammalamadaka, Panuakdet Suwannatat, Steven K Fisher, BS Manjunath, Tobias H\u00f6llerer, Gabriel Luna",
+      "authors": "Aruna Jammalamadaka, Panuakdet Suwannatat, Steven K Fisher, BS Manjunath, Tobias Hollerer, Gabriel Luna",
       "year": 2015,
       "month": "Feb",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Bioinformatics",
+      "abstract": "Motivation: In addition to being involved in retinal vascular growth, astrocytes play an important role in diseases and injuries, such as glaucomatous neuro-degeneration and retinal detachment. Studying astrocytes, their morphological cell characteristics and their spatial relationships to the surrounding vasculature in the retina may elucidate their role in these conditions. Results: Our results show that in normal healthy retinas, the distribution of observed astrocyte cells does not follow a uniform distribution. The cells are significantly more densely packed around the blood vessels than a uniform distribution would predict. We also show that compared with the distribution of all cells, large cells are more dense in the vicinity of veins and toward the optic nerve head whereas smaller cells are often more dense in the vicinity of arteries. We hypothesize that since veinal astrocytes are known to transport toxic metabolic waste away from neurons they may be more critical than arterial astrocytes and therefore require larger cell bodies to process waste more efficiently.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1093/bioinformatics/btv097",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 221,
@@ -749,11 +768,12 @@
       "authors": "Niloufar Pourian, B.S. Manjunath",
       "year": 2015,
       "month": "Jan",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "IEEE Winter Conference on Applications of Computer Vision",
+      "abstract": "An approach to image retrieval using spatial configurations is presented. The goal is to search the database for images that contain similar objects (image-patches) with a given configuration, size and position. The proposed approach consists of creating localized representations robust to segmentation variations, and a sub-graph matching method to compare the query with the database items. Localized object representations are created using a community detection method that groups visually similar segments. Extensive experimental results on three challenging datasets are provided to demonstrate the feasibility of the approach.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/WACV.2015.133",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 220,
@@ -761,11 +781,12 @@
       "authors": "S. Karthikeyan",
       "year": 2014,
       "month": "Sep",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "PhD Thesis",
+      "abstract": "This research focuses on enhancing computer vision algorithms using eye tracking and visual saliency. Recent advances in eye tracking device technology have enabled large scale collection of eye tracking data, without affecting viewer experience. As eye tracking data is biased towards high level image and video semantics, it provides a valuable prior for object detection in images and object extraction in videos. We specifically explore the following problems in the thesis: 1) eye tracking and saliency enhanced object detection, 2) eye tracking assisted object extraction in videos, and 3) role of object co-occurrence and camera focus in visual attention modeling. Since human attention is biased towards faces and text, in the first work we propose an approach to isolate face and text regions in images by analyzing eye tracking data from multiple subjects. Eye tracking data is clustered and region labels are predicted using a Markov random field model. In the second work, we study object extraction in videos using eye tracking prior. We propose an algorithm to extract dominant visual tracks in eye tracking data from multiple subjects by solving a linear assignment problem. Visual tracks localize object search and we propose a novel mixed graph association framework, inferred by binary integer linear programming.  In the final work, we address the problem of predicting where people look in images. We specifically explore the importance of scene context in the form of object co-occurrence and camera focus. The proposed model extracts low-, mid- and high-level and scene context features and uses a regression framework to predict visual attention map. In all the above cases, extensive experimental results show that the proposed methods outperform current state-of-the-art.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://escholarship.org/uc/item/556687hq",
+      "category": "archive",
+      "tags": ["computer-vision", "biomedical"]
     },
     {
       "id": 219,
@@ -773,11 +794,12 @@
       "authors": "A. M. Rahimi, R.J. Miller, D.V. Fedorov, S. Sunderrajan, B.M. Doheny, H.M. Page, B.S. Manjunath",
       "year": 2014,
       "month": "Aug",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "ICPR Workshop on Computer Vision for Analysis of Underwater Imagery",
+      "abstract": "Coastal marine ecosystems are highly productive and diverse, but biodiversity of underwater habitats is poorly described due to logistical and financial limitations of diving and submersible operations. Imagery is a promising way to address this challenge, but the complexity of diverse organisms thwarts simple automated analysis. We consider the problem of automated annotation of complex communities of sessile marine invertebrates and macroalgae in order to automate percent coverage estimation. We propose an efficient fusion technique amongst diverse classifiers based on the idea of 'dropout' in machine learning. We use dropout technique to weight each classifier implicitly and for each specie we optimize the region of interest (ROI) for highest accuracy. The preliminary results are promising and show 20% increase in average accuracy (over 30 species) when compared with the best base performance of Random Forest classifiers. The data set along with human 'ground truth' annotations are available to the public.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1109/CVAUI.2014.17",
+      "category": "archive",
+      "tags": ["biodiversity"]
     },
     {
       "id": 218,
@@ -785,11 +807,11 @@
       "authors": "Carter de Leo and B.S. Manjunath",
       "year": 2014,
       "month": "May",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "ACM Transactions on Sensor Networks (TOSN)",
+      "abstract": "Camera network systems generate large volumes of potentially useful data, but extracting value from multiple, related videos can be a daunting task for a human reviewer. Multicamera video summarization seeks to make this task more tractable by generating a reduced set of output summary videos that concisely capture important portions of the input set. We present a system that approaches summarization at the level of detected activity motifs and shortens the input videos by compacting the representation of individual activities. Additionally, redundancy is removed across camera views by omitting from the summary activity occurrences that can be predicted by other occurrences. The system also detects anomalous events within a unified framework and can highlight them in the summary. Our contributions are a method for selecting useful parts of an activity to present to a viewer using activity motifs and a novel framework to score the importance of activity occurrences and allow transfer of importance between temporally related activities without solving the correspondence problem. We provide summarization results for a two camera network, an eleven camera network, and data from PETS 2001. We also include results from Amazon Mechanical Turk human experiments to evaluate how our visualization decisions affect task performance.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1145/2530285",
+      "tags": ["complex-activity", "computer-vision"]
     },
     {
       "id": 217,
@@ -797,11 +819,12 @@
       "authors": "Thomas Kuo, Zefeng Ni, Santhoshkumar Sunderrajan and B.S. Manjunath",
       "year": 2014,
       "month": "May",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "ACM Transactions on Sensor Networks (TOSN)",
+      "abstract": "In a wide-area camera network, cameras are often placed such that their views do not overlap. Collaborative tasks such as tracking and activity analysis still require discovering the network topology including the extrinsic calibration of the cameras. This work addresses the problem of calibrating a fixed camera in a wide-area camera network in a global coordinate system so that the results can be shared across calibrations. We achieve this by using commonly available mobile devices such as smartphones. At least one mobile device takes images that overlap with a fixed camera's view and records the GPS position and 3D orientation of the device when an image is captured. These sensor measurements (including the image, GPS position, and device orientation) are fused in order to calibrate the fixed camera. This article derives a novel maximum likelihood estimation formulation for finding the most probable location and orientation of a fixed camera. This formulation is solved in a distributed manner using a consensus algorithm. We evaluate the efficacy of the proposed methodology with several simulated and real-world datasets.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1145/2530284",
+      "category": "archive",
+      "tags": ["complex-activity"]
     },
     {
       "id": 216,
@@ -809,11 +832,12 @@
       "authors": "Jiejun Xu, Vignesh Jagadeesh 2nd, B.S. Manjunath",
       "year": 2014,
       "month": "Feb",
-      "publication_venue": "",
-      "abstract": "",
-      "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "publication_venue": "IEEE Transactions on Multimedia",
+      "abstract": "The problem of multi-label image classification using multiple feature modalities is considered in this work. Given a collection of images with partial labels, we first model the association between different feature modalities and the images labels. These associations are then propagated with a graph diffusion kernel to classify the unlabeled images. Towards this objective, a novel Fused Multimodal Bi-relational Graph representation is proposed, with multiple graphs corresponding to different feature modalities, and one graph corresponding to the image labels. Such a representation allows for effective exploitation of both feature complementariness and label correlation. This contrasts with previous work where these two factors are considered in isolation. Furthermore, we provide a solution to learn the weight for each image graph by estimating the discriminative power of the corresponding feature modality. Experimental results with our proposed method on two standard multi-label image datasets are very promising.",
+      "pdf_link": "https://ieeexplore.ieee.org/abstract/document/6704707",
+      "doi_link": "https://doi.org/10.1109/TMM.2013.2291218",
+      "category": "archive",
+      "tags": ["computer-vision"]
     },
     {
       "id": 215,
@@ -821,11 +845,12 @@
       "authors": "A. Baddeley, A. Jammalamadaka and G. Nair",
       "year": 2014,
       "month": "Feb",
-      "publication_venue": "",
-      "abstract": "",
+      "publication_venue": "Journal of Royal Statistical Society, vol. Series C (Applied Statistics)",
+      "abstract": "We develop methods for analysing the spatial pattern of events, classified into several types, that occur on a network of lines. The motivation is the study of small protrusions called spines which occur on the dendrite network of a neuron. The spatially varying density of spines is modelled by using relative distributions and regression trees. Spatial correlations are investigated by using counterparts of the K-function and pair correlation function, where the main problem is to compensate for the network geometry. This application illustrates the need for careful analysis of spatial variation in the intensity of points, before assessing any evidence of clustering.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "archive"
+      "doi_link": "https://doi.org/10.1111/rssc.12054",
+      "category": "archive",
+      "tags": ["biomedical"]
     },
     {
       "id": 214,

@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${yearPublications.map(pub => `
                             <div class="publication">
                                 <h3>${pub.title}</h3>
-                                <p class="publication-meta">${pub.authors} ${pub.month ? `| ${pub.month}` : ''} ${pub.publication_venue ? `| ${pub.publication_venue}` : ''}</p>
+                                <p class="publication-meta">${pub.authors} ${pub.month ? `| ${pub.month}` : ''} ${pub.publication_venue ? `| <strong>${pub.publication_venue}</strong>` : ''}</p>
                                 ${pub.abstract ? `
                                     <div class="abstract-section">
                                         <button class="abstract-toggle" onclick="toggleAbstract(this)">Show Abstract</button>
@@ -207,8 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     </div>
                                 ` : ''}
                                 <div class="publication-links">
-                                    ${pub.pdf_link ? `<a href="${pub.pdf_link}">PDF</a>` : ''}
-                                    ${pub.doi_link ? `<a href="${pub.doi_link}">DOI</a>` : ''}
+                                    ${pub.doi_link && pub.doi_link !== '#' ? `<a href="${pub.doi_link}">DOI</a>` : ''}
                                 </div>
                             </div>
                         `).join('')}
