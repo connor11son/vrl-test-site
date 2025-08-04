@@ -1,6 +1,6 @@
 [
     {
-      "id": 276,
+      "id": 283,
       "title": "RareSpot: Spotting Small and Rare Wildlife in Aerial Imagery with Multi-Scale Consistency and Context-Aware Augmentation",
       "authors": "Bowen Zhang, Jesse T Boulerice, Nikhil Kuniyil, Charvi Mendiratta, Satish Kumar, Hila Shamon, BS Manjunath",
       "year": 2025,
@@ -12,7 +12,7 @@
       "category": "wildlife"
     },
     {
-      "id": 275,
+      "id": 282,
       "title": "DDS: Decoupled dynamic scene-graph generation network",
       "authors": "ASM Iftekhar, Raphael Ruschel, Satish Kumar, Suya You, BS Manjunath",
       "year": 2025,
@@ -24,7 +24,7 @@
       "category": "complex-activity"
     },
     {
-      "id": 274,
+      "id": 281,
       "title": "ReeSPOT: Reeb Graph Models Semantic Patterns of Normalcy in Human Trajectories",
       "authors": "Bowen Zhang, S Shailja, Chandrakanth Gudavalli, Connor Levenson, Amil Khan, B S. Manjunath",
       "year": 2024,
@@ -36,7 +36,7 @@
       "category": "geospatial"
     },
     {
-      "id": 273,
+      "id": 280,
       "title": "ReeFRAME: Reeb Graph based Trajectory Analysis Framework to Capture Top-Down and Bottom-Up Patterns of Life",
       "authors": "Chandrakanth Gudavalli, Bowen Zhang, Connor Levenson, Kin Gwn Lore, BS Manjunath",
       "year": 2024,
@@ -48,7 +48,7 @@
       "category": "geospatial"
     },
     {
-      "id": 272,
+      "id": 279,
       "title": "Generalizable deepfake detection with phase-based motion analysis",
       "authors": "Ekta Prashnani, Michael Goebel, BS Manjunath",
       "year": 2024,
@@ -60,7 +60,7 @@
       "category": "forensics"
     },
     {
-      "id": 271,
+      "id": 278,
       "title": "Wildlifemapper: Aerial image analysis for multi-species detection and identification",
       "authors": "Satish Kumar, Bowen Zhang, Chandrakanth Gudavalli, Connor Levenson, Lacey Hughey, Jared A Stabach, Irene Amoke, Gordon Ojwang, Joseph Mukeka, Stephen Mwiu, Joseph Ogutu, Howard Frederick, BS Manjunath",
       "year": 2024,
@@ -72,7 +72,7 @@
       "category": "wildlife"
     },
     {
-      "id": 270,
+      "id": 277,
       "title": "Bload: Enhancing neural network training with efficient sequential data handling",
       "authors": "Raphael Ruschel, ASM Iftekhar, BS Manjunath, Suya You",
       "year": 2023,
@@ -84,7 +84,7 @@
       "category": "complex-activity"
     },
     {
-      "id": 269,
+      "id": 276,
       "title": "Retrace: Topological evaluation of white matter tractography algorithms using reeb graphs",
       "authors": "S Shailja, Jefferson W Chen, Scott T Grafton, BS Manjunath",
       "year": 2023,
@@ -96,7 +96,7 @@
       "category": "biomedical"
     },
     {
-      "id": 268,
+      "id": 275,
       "title": "A robust approach to 3D neuron shape representation for quantification and classification",
       "authors": "Jiaxiang Jiang, Michael Goebel, Cezar Borba, William Smith, BS Manjunath",
       "year": 2023,
@@ -108,7 +108,7 @@
       "category": "biomedical"
     },
     {
-      "id": 267,
+      "id": 274,
       "title": "Reebundle: a method for topological modeling of white matter pathways using diffusion mri",
       "authors": "S Shailja, Vikram Bhagavatula, Matthew Cieslak, Jean M Vettel, Scott T Grafton, BS Manjunath",
       "year": 2023,
@@ -120,7 +120,7 @@
       "category": "biomedical"
     },
     {
-      "id": 266,
+      "id": 273,
       "title": "AI-based analysis of the shunt treatment in pre-and post-surgery computed tomography brain scans of iNPH patients",
       "authors": "S Shailja, Christopher Nguyen, Krithika Thanigaivelan, Vikram Bhagavatula, Jefferson W Chen, BS Manjunath",
       "year": 2023,
@@ -132,7 +132,7 @@
       "category": "biomedical"
     },
     {
-      "id": 265,
+      "id": 272,
       "title": "Gtnet: Guided transformer network for detecting human-object interactions",
       "authors": "ASM Iftekhar, Satish Kumar, R Austin McEver, Suya You, BS Manjunath",
       "year": 2023,
@@ -144,7 +144,7 @@
       "category": "complex-activity"
     },
     {
-      "id": 264,
+      "id": 271,
       "title": "3D Neuron Morphology Analysis",
       "authors": "Jiaxiang Jiang, Michael Goebel, Cezar Borba, William Smith, BS Manjunath",
       "year": 2023,
@@ -156,7 +156,7 @@
       "category": "biomedical"
     },
     {
-      "id": 263,
+      "id": 270,
       "title": "Segmentation, tracking, and sub-cellular feature extraction in 3D time-lapse images",
       "authors": "Jiaxiang Jiang, Amil Khan, S Shailja, Samuel A Belteton, Michael Goebel, Daniel B Szymanski, BS Manjunath",
       "year": 2023,
@@ -168,7 +168,7 @@
       "category": "biomedical"
     },
     {
-      "id": 262,
+      "id": 269,
       "title": "StressVision: Non-Invasive Stress Detection from Thermal Videos",
       "authors": "Calvin Xia, Vikram Bhagavatula, Jason Moraes, William Peng, Ryan Murakawa-Rubin, Tom Bullock, Satish Kumar, BS Manjunath",
       "year": 2023,
@@ -180,7 +180,7 @@
       "category": "biomedical"
     },
     {
-      "id": 261,
+      "id": 268,
       "title": "Methanemapper: Spectral absorption aware hyperspectral transformer for methane detection",
       "authors": "Satish Kumar, Ivan Arevalo, ASM Iftekhar, BS Manjunath",
       "year": 2023,
@@ -192,7 +192,7 @@
       "category": "geospatial"
     },
     {
-      "id": 260,
+      "id": 267,
       "title": "Locl: Learning object-attribute composition using localization",
       "authors": "Satish Kumar, ASM Iftekhar, Ekta Prashnani, BS Manjunath",
       "year": 2022,
@@ -204,7 +204,7 @@
       "category": "complex-activity"
     },
     {
-      "id": 259,
+      "id": 266,
       "title": "Context-Matched Collage Generation for Underwater Invertebrate Detection",
       "authors": "R Austin McEver, Bowen Zhang, BS Manjunath",
       "year": 2022,
@@ -216,7 +216,7 @@
       "category": "recent"
     },
     {
-      "id": 258,
+      "id": 265,
       "title": "Titanium 3D Microstructure for Physics-based Generative Models: A Dataset and Primer",
       "authors": "Devendra Kumar Jangid, Neal R Brodnik, McLean P Echlin, Samantha Daly, Tresa Pollock, B.S. Manjunath",
       "year": 2023,
