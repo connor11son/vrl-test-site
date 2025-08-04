@@ -6,10 +6,10 @@
       "year": 2025,
       "month": "Jun",
       "publication_venue": "arXiv preprint arXiv:2506.19087",
-      "abstract": "",
+      "abstract": "Automated detection of small and rare wildlife in aerial imagery is crucial for effective conservation, yet remains a significant technical challenge. Prairie dogs exemplify this issue: their ecological importance as keystone species contrasts sharply with their elusive presence--marked by small size, sparse distribution, and subtle visual features--which undermines existing detection approaches. To address these challenges, we propose RareSpot, a robust detection framework integrating multi-scale consistency learning and context-aware augmentation. Our multi-scale consistency approach leverages structured alignment across feature pyramids, enhancing fine-grained object representation and mitigating scale-related feature loss. Complementarily, context-aware augmentation strategically synthesizes challenging training instances by embedding difficult-to-detect samples into realistic environmental contexts, significantly boosting model precision and recall. Evaluated on an expert-annotated prairie dog drone imagery benchmark, our method achieves state-of-the-art performance, improving detection accuracy by over 35% compared to baseline methods. Importantly, it generalizes effectively across additional wildlife datasets, demonstrating broad applicability. The RareSpot benchmark and approach not only support critical ecological monitoring but also establish a new foundation for detecting small, rare species in complex aerial scenes.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.48550/arXiv.2506.19087",
+      "category": "wildlife"
     },
     {
       "id": 275,
@@ -18,10 +18,10 @@
       "year": 2025,
       "month": "Feb",
       "publication_venue": "2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
-      "abstract": "",
+      "abstract": "Scene-graph generation involves creating a structural representation of the relationships between objects in a scene by predicting subject-object-relation triplets from input data. Existing methods show poor performance in detecting triplets outside of a predefined set, primarily due to their reliance on dependent feature learning. To address this issue we propose DDS– a decoupled dynamic scene-graph generation network- that consists of two independent branches that can disentangle extracted features. The key innovation of the current paper is the decoupling of the features representing the relationships from those of the objects, which enables the detection of novel object-relationship combinations. The DDS model is evaluated on three datasets and outperforms previous methods by a significant margin, especially in detecting previously unseen triplets.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1109/WACV61041.2025.00936",
+      "category": "complex-activity"
     },
     {
       "id": 274,
@@ -30,10 +30,10 @@
       "year": 2024,
       "month": "Dec",
       "publication_venue": "International Conference on Pattern Recognition",
-      "abstract": "",
+      "abstract": "This paper introduces ReeSPOT, a novel Reeb graph-based method to model patterns of life in human trajectories (akin to a fingerprint). Human behavior typically follows a pattern of normalcy in day-to-day activities. This is marked by recurring activities within specific time periods. In this paper, we model this behavior using Reeb graphs where any deviation from usual day-to-day activities is encoded as nodes in the Reeb graph. The complexity of the proposed algorithm is linear with respect to the number of time points in a given trajectory. We demonstrate the usage of ReeSPOT and how it captures the critically significant spatial and temporal deviations using the nodes of the Reeb graph. Our case study presented in this paper includes realistic human movement scenarios: visiting uncommon locations, taking odd routes at infrequent times, uncommon time visits, and uncommon stay durations. We analyze the Reeb graph to interpret the topological structure of the GPS trajectories. Potential applications of ReeSPOT include urban planning, security surveillance, and behavioral research.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1007/978-3-031-78183-4_16",
+      "category": "geospatial"
     },
     {
       "id": 273,
@@ -44,8 +44,8 @@
       "publication_venue": "Proceedings of the 1st ACM SIGSPATIAL International Workshop on Geospatial Anomaly Detection",
       "abstract": "In this paper, we present ReeFRAME, a scalable Reeb graph-based framework designed to analyze vast volumes of GPS-enabled human trajectory data generated at 1Hz frequency. ReeFRAME models Patterns-of-life (PoL) at both the population and individual levels, utilizing Multi-Agent Reeb Graphs (MARGs) for population-level patterns and Temporal Reeb Graphs (TERGs) for individual trajectories. The framework's linear algorithmic complexity relative to the number of time points ensures scalability for anomaly detection. We validate ReeFRAME on six large-scale anomaly detection datasets, simulating real-time patterns with up to 500,000 agents over two months.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1145/3681765.3698452",
+      "category": "geospatial"
     },
     {
       "id": 272,
@@ -54,10 +54,10 @@
       "year": 2024,
       "month": "Sep",
       "publication_venue": "IEEE Transactions on Image Processing",
-      "abstract": "",
+      "abstract": "We propose PhaseForensics, a DeepFake (DF) video detection method that uses a phase-based motion representation of facial temporal dynamics. Existing methods that rely on temporal information across video frames for DF detection have many advantages over the methods that only utilize the per-frame features. However, these temporal DF detection methods still show limited cross-dataset generalization and robustness to common distortions due to factors such as error-prone motion estimation, inaccurate landmark tracking, or the susceptibility of the pixel intensity-based features to adversarial distortions and the cross-dataset domain shifts. Our key insight to overcome these issues is to leverage the temporal phase variations in the band-pass frequency components of a face region across video frames. This not only enables a robust estimate of the temporal dynamics in the facial regions, but is also less prone to cross-dataset variations. Furthermore, we show that the band-pass filters used to compute the local per-frame phase form an effective defense against the perturbations commonly seen in gradient-based adversarial attacks. Overall, with PhaseForensics, we show improved distortion and adversarial robustness, and state-of-the-art cross-dataset generalization, with 92.4% video-level AUC on the challenging CelebDFv2 benchmark (a recent state of-the-art method, FTCN, compares at 86.9%).",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1109/TIP.2024.3441821",
+      "category": "forensics"
     },
     {
       "id": 271,
@@ -66,10 +66,10 @@
       "year": 2024,
       "month": "",
       "publication_venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
-      "abstract": "",
+      "abstract": "We introduce WildlifeMapper (WM) a flexible model designed to detect locate and identify multiple species in aerial imagery. It addresses the limitations of traditional labor-intensive wildlife population assessments that are central to advancing environmental conservation efforts worldwide. While a number of methods exist to automate this process they are often limited in their ability to generalize to different species or landscapes due to the dominance of homogeneous backgrounds and/or poorly captured local image structures. WM introduces two novel modules that help to capture the local structure and context of objects of interest to accurately localize and identify them achieving a state-of-the-art (SOTA) detection rate of 0.56 mAP. Further we introduce a large aerial imagery dataset with more than 11k Images and 28k annotations verified by trained experts. WM also achieves SOTA performance on 3 other publicly available aerial survey datasets collected across 4 different countries improving mAP by 42%.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1109/CVPR52733.2024.01197",
+      "category": "wildlife"
     },
     {
       "id": 270,
@@ -78,10 +78,10 @@
       "year": 2023,
       "month": "Oct",
       "publication_venue": "arXiv preprint arXiv:2310.10879",
-      "abstract": "",
+      "abstract": "The increasing complexity of modern deep neural network models and the expanding sizes of datasets necessitate the development of optimized and scalable training methods. In this white paper, we addressed the challenge of efficiently training neural network models using sequences of varying sizes. To address this challenge, we propose a novel training scheme that enables efficient distributed data-parallel training on sequences of different sizes with minimal overhead. By using this scheme we were able to reduce the padding amount by more than 100 while not deleting a single frame, resulting in an overall increased performance on both training time and Recall in our experiments.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.48550/arXiv.2310.10879",
+      "category": "complex-activity"
     },
     {
       "id": 269,
@@ -90,10 +90,10 @@
       "year": 2023,
       "month": "Oct",
       "publication_venue": "International Workshop on Computational Diffusion MRI",
-      "abstract": "",
+      "abstract": "We present ReTrace, a novel graph matching-based topological evaluation and validation method for tractography algorithms. ReTrace uses a Reeb graph whose nodes and edges capture the topology of white matter fiber bundles. We evaluate the performance of 96 algorithms from the ISMRM Tractography Challenge and the standard algorithms implemented in DSI Studio for the population-averaged Human Connectome Project (HCP) dataset. The existing evaluation metrics such as the f-score, bundle overlap, and bundle overreach fail to account for fiber continuity resulting in high scores even for broken fibers, branching artifacts, and mis-tracked fiber crossing. In contrast, we show that ReTrace effectively penalizes the incorrect tracking of fibers within bundles while concurrently pinpointing positions with significant deviation from the ground truth. Based on our analysis of ISMRM challenge data, we find that no single algorithm consistently outperforms others across all known white matter fiber bundles, highlighting the limitations of the current tractography methods. We also observe that deterministic tractography algorithms perform better in tracking the fundamental properties of fiber bundles, specifically merging and splitting, compared to probabilistic tractography. We compare different algorithmic approaches for a given bundle to highlight the specific characteristics that contribute to successful tracking, thus providing topological insights into the development of advanced tractography algorithms.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1007/978-3-031-47292-3_16",
+      "category": "biomedical"
     },
     {
       "id": 268,
@@ -102,10 +102,10 @@
       "year": 2023,
       "month": "Sep",
       "publication_venue": "BMC bioinformatics",
-      "abstract": "",
+      "abstract": "We consider the problem of finding an accurate representation of neuron shapes, extracting sub-cellular features, and classifying neurons based on neuron shapes. In neuroscience research, the skeleton representation is often used as a compact and abstract representation of neuron shapes. However, existing methods are limited to getting and analyzing “curve” skeletons which can only be applied for tubular shapes. This paper presents a 3D neuron morphology analysis method for more general and complex neuron shapes. First, we introduce the concept of skeleton mesh to represent general neuron shapes and propose a novel method for computing mesh representations from 3D surface point clouds. A skeleton graph is then obtained from skeleton mesh and is used to extract sub-cellular features. Finally, an unsupervised learning method is used to embed the skeleton graph for neuron classification. Extensive experiment results are provided and demonstrate the robustness of our method to analyze neuron morphology.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1186/s12859-023-05482-y",
+      "category": "biomedical"
     },
     {
       "id": 267,
@@ -114,10 +114,10 @@
       "year": 2023,
       "month": "Aug",
       "publication_venue": "IEEE Transactions on Medical Imaging",
-      "abstract": "",
+      "abstract": "Tractography can generate millions of complex curvilinear fibers (streamlines) in 3D that exhibit the geometry of white matter pathways in the brain. Common approaches to analyzing white matter connectivity are based on adjacency matrices that quantify connection strength but do not account for any topological information. A critical element in neurological and developmental disorders is the topological deterioration and irregularities in streamlines. In this paper, we propose a novel Reeb graph-based method “ReeBundle” that efficiently encodes the topology and geometry of white matter fibers. Given the trajectories of neuronal fiber pathways (neuroanatomical bundle), we re-bundle the streamlines by modeling their spatial evolution to capture geometrically significant events (akin to a fingerprint). ReeBundle parameters control the granularity of the model and handle the presence of improbable streamlines commonly produced by tractography. Further, we propose a new Reeb graph-based distance metric that quantifies topological differences for automated quality control and bundle comparison. We show the practical usage of our method using two datasets: (1) For International Society for Magnetic Resonance in Medicine (ISMRM) dataset, ReeBundle handles the morphology of the white matter tract configurations due to branching and local ambiguities in complicated bundle tracts like anterior and posterior commissures; (2) For the longitudinal repeated measures in the Cognitive Resilience and Sleep History (CRASH) dataset, repeated scans of a given subject acquired weeks apart lead to provably similar Reeb graphs that differ significantly from other subjects, thus highlighting ReeBundle’s potential for clinical fingerprinting of brain regions.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1109/TMI.2023.3306049",
+      "category": "biomedical"
     },
     {
       "id": 266,
@@ -126,10 +126,10 @@
       "year": 2023,
       "month": "Jul",
       "publication_venue": "medRxiv",
-      "abstract": "",
+      "abstract": "This study examines whether quantifiable changes can be detected in ventricular volume in Idiopathic Normal Pressure Hydrocephalus (iNPH) patients that undergo ventriculo-peritoneal shunt procedures. There is no known metric that characterizes the change in ventricular volume for iNPH patients after shunt placement. Two de-identified and independent datasets are studied: 45 brain CT scans (24 diagnosed with iNPH and 21 normal elderly individuals) are used to evaluate the effectiveness of our proposed ventricular volume metric as a diagnostic tool for iNPH. The performance of our deep learning model-based metric is compared to the traditional Evan’s Index using ROC analysis. 16 subjects with a total of 50 longitudinal CT scans taken before and after shunt surgery across different imaging centers are studied to quantify the impact of shunt treatment. Clinical symptoms of gait, balance, cognition, and bladder continence are studied with respect to the proposed metric. Our proposed metric achieves high accuracy (0.95), precision (0.96), and recall (0.96) in distinguishing between normal and iNPH subjects, surpassing the performance of the Evan’s Index. This metric allows us to track changes in ventricular volume before and after shunt surgery for 16 subjects. Notably, the 15 subjects with iNPH demonstrate a decrease in ventricular volume post-surgery and a concurrent clinical improvement in their iNPH symptomatology.",
       "pdf_link": "#",
-      "doi_link": "#",
-      "category": "recent"
+      "doi_link": "https://doi.org/10.1101/2023.06.28.23292008",
+      "category": "biomedical"
     },
     {
       "id": 265,

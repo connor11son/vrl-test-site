@@ -19,6 +19,10 @@
     {
       "id": "geospatial",
       "name": "Geospatial Data Analysis"
+    },
+    {
+      "id": "forensics",
+      "name": "Media Forensics"
     }
   ]
 }
